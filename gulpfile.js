@@ -39,7 +39,7 @@ gulp.task('html', ['jekyll-build'], function() {
 // reloads when a Markdown file is changed and runs jekyll task
 gulp.task('markdown', ['jekyll-build'], function() {
   return gulp.src('./**/*.md')
-    .pipe(plugins.concat.reload());
+    .pipe(plugins.connect.reload());
 });
 
 // lint task
