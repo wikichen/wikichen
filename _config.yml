@@ -16,5 +16,11 @@ cdn_url: http://cloud.wikichen.is/serving
 
 enable_disqus: false
 
-exclude: ['node_modules', 'gemfile', 'gulpfile.js', 'Rakefile',
-          's3_website.yml', 'README.md', 'LICENSE']
+exclude: ['Gemfile',
+          'gulpfile.js',
+          'node_modules',  
+          'package.json',
+          'Rakefile',
+          's3_website.yml',
+          'README.md',
+          'LICENSE']
