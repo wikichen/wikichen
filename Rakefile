@@ -2,25 +2,6 @@ repo_url      = "git@github.com:wikichen/wikichen.is.git"
 deploy_dir    = "_site"
 deploy_branch = "gh-pages"
 
-desc 'Preview site on localhost'
-task :preview do
-  system 'jekyll serve --watch'
-end
-
-desc 'TODO: Start Jekyll server and watch Sass/Bourbon files'
-task :server do
-  puts "Starting the Jekyll server and watching Sass files."
-  jekyllPid = Process.spawn('jekyll serve --watch --drafts --config=_config.yml,_local_config.yml')
-  sassPid = Process.spawn('sass --watch stylesheets/scss:stylesheets -r ./stylesheets/scss/bourbon/lib/bourbon.rb')
-
-  trap("INT") {
-    [jekyllPid, sassPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
-    exit 0
-  }
-
-  [jekyllPid, sassPid].each { |pid| Process.wait(pid) }
-end
-
 desc 'Deploy the site to AWS S3 served with CloudFront'
 task :deploy do
   system 'jekyll build'
@@ -59,25 +40,6 @@ task :commit => [:build] do
   puts status ? "Success" : "Failed"
   puts "\n## Pushing commits to remote"
   status = system("git push origin source")
-  puts status ? "Success" : "Failed"
-end
-
-desc "Deploy _site/ to gh-pages branch"
-task :deploy_beta => [:build] do
-  puts "\n## Deleting gh-pages branch"
-  status = system("git branch -D gh-pages")
-  puts status ? "Success" : "Failed"
-  puts "\n## Creating new gh-pages branch and switching to it"
-  status = system("git checkout -b gh-pages")
-  puts status ? "Success" : "Failed"
-  puts "\n## Forcing the _site subdirectory to be project root"
-  status = system("git filter-branch --subdirectory-filter _site/ -f")
-  puts status ? "Success" : "Failed"
-  puts "\n## Switching back to source branch"
-  status = system("git checkout source")
-  puts status ? "Success" : "Failed"
-  puts "\n## Pushing all branches to origin"
-  status = system("git push --all origin")
   puts status ? "Success" : "Failed"
 end
 
