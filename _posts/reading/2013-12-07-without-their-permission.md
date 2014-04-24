@@ -4,8 +4,6 @@ subtitle: "A Rallying Cry for the 21st Century"
 book_title: "Without Their Permission"
 book_author: "Alexis Ohanian"
 
-category: reading
-tags: reading
 layout: post
 comments: false
 
@@ -13,6 +11,8 @@ image_url: /books/without-their-permission.jpg
 image_alt: "Without Their Permission by Alexis Ohanian"
 
 affiliate_link: http://www.amazon.com/gp/product/1455520020/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1455520020&linkCode=as2&tag=wikichenis-20
+
+permalink: /reading/without-their-permission/
 ---
 
 *Without Their Permission* is Alexis Ohanian's rallying cry for the 21st century, an age where the sociocultural monolith erected by the Internet has bestowed unprecedented independence and distribution&mdash;powers that were once the exclusive domain of traditional gatekeepers&mdash;upon individual content creators and opportunistic upstarts.

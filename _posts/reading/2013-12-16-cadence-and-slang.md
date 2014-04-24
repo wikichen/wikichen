@@ -4,8 +4,6 @@ subtitle: "The Quintessential Primer to Interaction Design"
 book_title: "Cadence & Slang"
 book_author: "Nick Disabato"
 
-category: reading
-tags: reading
 layout: post
 comments: false
 
@@ -13,6 +11,8 @@ image_url: /books/cadence-and-slang.jpg
 image_alt: "Cadence & Slang by Nick Disabato"
 
 affiliate_link: http://cadence.cc/
+
+permalink: /reading/cadence-and-slang/
 ---
 
 *Cadence & Slang* is the book I wish I read before I started studying computer science in college. It's a book I wish I had when I first fell in love with the world of design and wanted to leverage my technical background in some way. It’s a book I wish someone gave me when I first started exploring the field of interaction design. Nick Disabato’s *Cadence & Slang* is one of the most important books I’ve read this year---it’s the quintessential primer to interaction design for anyone who delights in making things for people.

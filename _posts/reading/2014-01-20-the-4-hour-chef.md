@@ -4,8 +4,6 @@ subtitle: "How Not to Write a Cooking Book"
 book_title: "The 4-Hour Chef"
 book_author: "Timothy Ferriss"
 
-category: reading
-tags: reading
 layout: post
 comments: false
 
@@ -13,6 +11,8 @@ image_url: /books/the-4-hour-chef.jpg
 image_alt: "The 4-Hour Chef by Tim Ferriss"
 
 affiliate_link: http://www.amazon.com/gp/product/B005NJU8PA/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005NJU8PA&linkCode=as2&tag=wikichenis-20
+
+permalink: /reading/the-4-hour-chef/
 ---
 
 I wanted to like this book, I really did. But not only did getting to the end of this book cement my impression of Tim Ferriss as one of the most insufferable human beings in mankind's existence, his wide-eyed, haphazard, and misguided prance into the world of food marks a true travesty in culinary history. The book is less about actually imparting any practical cooking advice for the amateur as it is about six hundred or so painfully staged pages of Tim Ferris' research into the obscure and the unaccessible, a brag book of sorts as he tosses about uninspired recipes, irrelevant anecdotes, and his self-serving exploits in the face of the unassuming reader, who was promised a progressive, realistic guide to the oft formidable world of food preparation. No, don't even get me started on the *learning about how to learn through cooking* fluff. It's bullshit.

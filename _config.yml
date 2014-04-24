@@ -9,7 +9,7 @@ markdown: kramdown
 
 pygments: true
 
-permalink: /:categories/:title/
+permalink: /:year/:month/:title/
 
 cdn_baseurl: http://cloud.wikichen.is
 cdn_url: http://cloud.wikichen.is/serving
@@ -18,7 +18,7 @@ enable_disqus: false
 
 exclude: ['Gemfile',
           'gulpfile.js',
-          'node_modules',  
+          'node_modules',
           'package.json',
           'Rakefile',
           's3_website.yml',

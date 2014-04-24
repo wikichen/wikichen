@@ -2,8 +2,6 @@
 layout: post
 title: "Write Like a Motherfucker"
 subtitle: "The Impossible Commitment"
-category: writing
-tags: writing
 comments: true
 ---
 

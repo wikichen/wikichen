@@ -1,9 +1,8 @@
 ---
 title: "Why I Dropped Out Of YC"
 subtitle: "When Hot Pants Get Uncomfortable"
+
 layout: post
-category: writing
-tags: making
 comments: true
 
 description: "A story about my first Moleskine and wearing hot pants."

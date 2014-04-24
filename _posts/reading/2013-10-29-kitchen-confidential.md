@@ -4,8 +4,6 @@ subtitle: "You Only Go Around Once"
 book_title: "Kitchen Confidential"
 book_author: "Anthony Bourdain"
 
-category: reading
-tags: reading
 layout: post
 comments: false
 
@@ -13,6 +11,8 @@ image_url: /books/kitchen-confidential.jpg
 image_alt: "Kitchen Confidential by Anthony Bourdain"
 
 affiliate_link: http://www.amazon.com/gp/product/0060899220/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0060899220&linkCode=as2&tag=wikichenis-20
+
+permalink: /reading/kitchen-confidential/
 ---
 
 > Cooking is a craft, I like to think, and a good cook is a craftsman---not an artist.

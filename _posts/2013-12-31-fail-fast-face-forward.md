@@ -2,9 +2,6 @@
 title: "Fail Fast, Face Forward"
 subtitle: "Some Hard Lessons Learned in 2013"
 
-featured: true
-category: writing
-tags: writing
 layout: post
 comments: true
 ---

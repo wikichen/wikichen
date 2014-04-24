@@ -2,9 +2,6 @@
 title: "Live Slowly"
 subtitle: "Zen and the Lost Art of Living"
 
-featured: true
-category: writing
-tags: design
 layout: post
 comments: true
 
