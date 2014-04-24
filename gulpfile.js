@@ -13,9 +13,9 @@ var buildDst  = './_site';
 var assetsSrc = './assets',
     assetsDst = buildDst + '/assets';
 
-// run a LiveReload server and auto open in browser
+var ignoredFolders = ['!./node_modules/**/*', '!./drafts'];
 
-
+// run a LiveReload server
 gulp.task('connect', function() {
   plugins.connect.server({
     root: [ buildDst ],
@@ -32,13 +32,13 @@ gulp.task('jekyll-build', function() {
 
 // reloads when an HTML file is changed and runs jekyll task
 gulp.task('html', ['jekyll-build'], function() {
-  return gulp.src(['./**/*.html', '!./node_modules/**/*'])
+  return gulp.src(['./**/*.html'].concat(ignoredFolders))
     .pipe(plugins.connect.reload());
 });
 
 // reloads when a Markdown file is changed and runs jekyll task
 gulp.task('markdown', ['jekyll-build'], function() {
-  return gulp.src('./**/*.md')
+  return gulp.src(['./**/*.md'].concat(ignoredFolders))
     .pipe(plugins.connect.reload());
 });
 
@@ -115,8 +115,8 @@ gulp.task('css', function(){
 
 // watch files for changes, exclude node_modules
 gulp.task('watch', function() {
-  gulp.watch(['./**/*.html', '!./node_modules/**/*'], ['html']);
-  gulp.watch('./_posts/**/*.md', ['markdown']);
+  gulp.watch(['./**/*.html'].concat(ignoredFolders), ['html']);
+  gulp.watch(['./**/*.md'].concat(ignoredFolders), ['markdown']);
   gulp.watch(assetsSrc + '/scss/**/*.scss', ['sass']);
   gulp.watch(assetsSrc + '/css/**/*.css', ['css']);
   gulp.watch(assetsSrc + '/js/*.js', ['lint', 'scripts']);
