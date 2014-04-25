@@ -13,7 +13,7 @@ var buildDst  = './_site';
 var assetsSrc = './assets',
     assetsDst = buildDst + '/assets';
 
-var ignoredFolders = ['!./node_modules/**/*', '!./drafts'];
+var ignoredFolders = ['!./node_modules/**/*', '!./_drafts'];
 
 // run a LiveReload server
 gulp.task('connect', function() {
