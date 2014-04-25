@@ -9,7 +9,7 @@ markdown: kramdown
 
 pygments: true
 
-permalink: /:year/:month/:title/
+permalink: /:year/:month/:day/:title/
 
 cdn_baseurl: http://cloud.wikichen.is
 cdn_url: http://cloud.wikichen.is/serving
