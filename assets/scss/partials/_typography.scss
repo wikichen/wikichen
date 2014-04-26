@@ -98,6 +98,14 @@ ul {
   }
 }
 
+ol {
+  list-style-type: decimal;
+  margin-bottom: $baseline;
+  li {
+    margin-left: $baseline;
+  }
+}
+
 
 
 // code stuff
