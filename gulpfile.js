@@ -97,7 +97,9 @@ gulp.task('sass', function() {
         noCache: true,
         quiet: true
       }))
-    //.pipe(plugins.autoprefixer('last 2 versions'))
+    .pipe(plugins.autoprefixer('last 2 versions'))
+    .pipe(gulp.dest(dst))
+    .pipe(plugins.rename({ suffix: '.min' }))
     .pipe(plugins.minifyCss())
     .pipe(gulp.dest(dst));
 });

@@ -1,1 +1,343 @@
-.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;position:relative}html{color:#463F40;font:112.5%/1.55556 'Hoefler Text A','Hoefler Text B',Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;text-rendering:optimizeLegibility}@media (max-width:30em){html{font-size:93.75%}}img{max-width:100%}@media (max-width:30em){h1{font-size:1.55556rem}}a{color:inherit;text-decoration:underline solid #463F40;transition:.3s;cursor:pointer}.caps{font-family:"Whitney SSm SC A","Whitney SSm SC B",'Whitney SSm A','Whitney SSm B',Verdana,Helvetica,sans-serif;text-transform:uppercase}.em,em{font-style:italic}.strong,strong{font-weight:700}.del,del{text-decoration:line-through}blockquote{overflow:hidden;border-left:2px solid #8A9999;padding-left:1.55556rem;color:#463F40;margin-bottom:1.55556rem}@media (max-width:30em){blockquote{margin-left:0}}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}p{margin-bottom:1.55556rem}.amp{font-family:Baskerville,Palatino,"Book Antiqua",serif;font-style:italic}hr{margin-top:3.11111rem;margin-bottom:3.11111rem;border:1px solid #D4D4D4;width:60px}.fleuron:before{content:"❦";display:block;text-align:center;margin:0 auto;color:#D4D4D4;font-size:28px;margin-top:1.55556rem}ul{list-style-type:disc;margin-bottom:1.55556rem}ul li{margin-left:1.55556rem}ol{list-style-type:decimal;margin-bottom:1.55556rem}ol li{margin-left:1.55556rem}code,pre{font-family:'Source Code Pro',Monaco,Courier,Verdana,monospace;border:1px solid #ddd;border-radius:3px;background-color:#f8f8f8}code{font-size:.9rem;display:inline-block;vertical-align:middle;max-width:100%;line-height:1.5;padding:0 2px;overflow:auto}pre{border:1px solid #ddd;border-radius:3px;background-color:#f8f8f8;padding:.3em .6em;overflow-y:hidden;overflow-x:auto;margin-bottom:1.55556rem}pre code{padding:0;border:none}html{font-feature-settings:"liga","dlig","salt";-webkit-font-feature-settings:"liga","dlig"}body{background-color:#F6F6F6}.page-header{text-align:center;margin:6.22222rem 0}h1{font-family:'Hoefler Text A','Hoefler Text B',Georgia,'Times New Roman',serif;font-size:2.66667rem;font-style:italic;line-height:1;color:#463F40;margin-bottom:.77778rem}h1 a{text-decoration:none}.page-desc{font-style:italic;color:#AAA;font-size:1rem}.bracket{font-style:normal;font-feature-settings:"salt" 1}h2{font-family:'Hoefler Text SC A','Hoefler Text SC B','Hoefler Text A','Hoefler Text B',Georgia,'Times New Roman',serif;font-weight:400;text-transform:uppercase;margin-bottom:.4em}a:hover{color:#F5A623}strong{font-weight:700}.wrap{max-width:580px;margin:0 auto}@media (max-width:30em){.wrap{width:90%}}.letter-intro,.letter-response{background:#FFF;max-width:700px;margin:0 auto;border:1px solid #F0F0F0;border-radius:1px}.letter-intro{padding-top:3.11111rem;padding-bottom:3.11111rem;margin-bottom:3.11111rem}.letter-response{padding:3.11111rem 0}.letter-header{text-align:center;margin-bottom:3.11111rem}.letter-fleuron{font-family:'Hoefler Text Fleur A','Hoefler Text Fleur B',sans-serif;font-size:2rem;color:#AAA;line-height:1}.letter-date{font-family:'Hoefler Text SC A','Hoefler Text SC B','Hoefler Text A','Hoefler Text B',Georgia,'Times New Roman',serif;font-weight:400;text-transform:uppercase;color:#AAA}.letter-title{font-size:1.55556rem;font-style:italic}.dc{float:left;padding-right:.25em;padding-top:.1em;line-height:1;color:#F5A623;font-size:3.88889rem;font-family:'Hoefler Text Swashes A','Hoefler Text Swashes B','Hoefler Text A','Hoefler Text B',Georgia,'Times New Roman',serif;font-style:italic}.swa{font-family:'Hoefler Text Swashes A','Hoefler Text Swashes B','Hoefler Text A','Hoefler Text B',Georgia,'Times New Roman',serif}.subs-link{font-family:'Hoefler Text SC A','Hoefler Text SC B','Hoefler Text A','Hoefler Text B',Georgia,'Times New Roman',serif;font-weight:400;text-transform:uppercase;font-size:1.1rem;line-height:1}.break-fleuron:before{font-family:'Hoefler Text Fleur A','Hoefler Text Fleur B',sans-serif;font-size:2rem;margin:1.55556rem 0;display:block;color:#D4D4D4;content:"9";text-align:center}.aside{font-size:.88889rem;color:#AAA;margin:1em 0}.fl{font-family:'Hoefler Text Fleur A','Hoefler Text Fleur B',sans-serif}@media (max-width:30em){.cramped{display:none}}
+/*---------------------------------------------------------------------------//
+
+  Personal.scss
+
+  Stylesheet for personal section (Letters from Jonathan)
+
+//---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------//
+
+  Module: All
+
+  Include to get all modules.
+
+//---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------//
+
+  Partial: Variables
+
+  Store all the global variables here, por favor.
+
+//---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------//
+
+  Module: Utilities
+
+  Some helpful helper methods and classes to use in the project.
+
+//---------------------------------------------------------------------------*/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/*---------------------------------------------------------------------------//
+
+  Partial: Reset
+
+  Based on Eric Meyer's reset.css: http://meyerweb.com/eric/tools/css/reset/
+
+//---------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*---------------------------------------------------------------------------//
+
+  Partials: Base
+
+  Base partial keeps variables and loads all modules.
+
+//---------------------------------------------------------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+html {
+  color: #463F40;
+  font: 112.5%/1.55556 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1; }
+  @media (max-width: 30em) {
+    html {
+      font-size: 93.75%; } }
+
+img {
+  max-width: 100%; }
+
+/*---------------------------------------------------------------------------//
+
+  Partial: Typography
+
+//---------------------------------------------------------------------------*/
+h1 {
+  color: #463F40;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-size: 2.33333rem;
+  line-height: 1;
+  margin-bottom: 2.33333rem; }
+  @media (max-width: 30em) {
+    h1 {
+      font-size: 1.55556rem; } }
+
+h2 {
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-weight: 600; }
+
+a {
+  color: inherit;
+  text-decoration: underline solid #463F40;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer; }
+  a:hover {
+    color: #c0362c; }
+
+.caps {
+  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  text-transform: uppercase; }
+
+em, .em {
+  font-style: italic; }
+
+strong, .strong {
+  font-weight: bold; }
+
+del, .del {
+  text-decoration: line-through; }
+
+blockquote {
+  overflow: hidden;
+  border-left: 2px solid #8A9999;
+  padding-left: 1.55556rem;
+  color: #463F40;
+  margin-bottom: 1.55556rem; }
+  @media (max-width: 30em) {
+    blockquote {
+      margin-left: 0; } }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+p {
+  margin-bottom: 1.55556rem; }
+
+.amp {
+  font-family: Baskerville, Palatino, "Book Antiqua", serif;
+  font-style: italic; }
+
+hr {
+  margin-top: 3.11111rem;
+  margin-bottom: 3.11111rem;
+  border: 1px solid #D4D4D4;
+  width: 60px; }
+
+.fleuron:before {
+  content: "❦";
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: #D4D4D4;
+  font-size: 28px;
+  margin-top: 1.55556rem; }
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 1.55556rem; }
+  ul li {
+    margin-left: 1.55556rem; }
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 1.55556rem; }
+  ol li {
+    margin-left: 1.55556rem; }
+
+pre, code {
+  font-family: 'Source Code Pro', Monaco, Courier, Verdana, monospace;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f8f8f8; }
+
+code {
+  font-size: 0.9rem;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  line-height: 1.5;
+  padding: 0 2px;
+  overflow: auto; }
+
+pre {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  padding: 0.3em 0.6em;
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin-bottom: 1.55556rem; }
+  pre code {
+    padding: 0;
+    border: none; }
+
+html {
+  -moz-font-feature-settings: "liga", "dlig", "salt";
+  font-feature-settings: "liga", "dlig", "salt";
+  -webkit-font-feature-settings: "liga", "dlig"; }
+
+body {
+  background-color: #F6F6F6; }
+
+.page-header {
+  text-align: center;
+  margin: 6.22222rem 0; }
+
+h1 {
+  font-family: 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
+  font-size: 2.66667rem;
+  font-style: italic;
+  line-height: 1;
+  color: #463F40;
+  margin-bottom: 0.77778rem; }
+  h1 a {
+    text-decoration: none; }
+  @media (max-width: 30em) { }
+
+.page-desc {
+  font-style: italic;
+  color: #AAAAAA;
+  font-size: 1rem; }
+
+.bracket {
+  font-style: normal;
+  -webkit-font-feature-settings: "salt" 1;
+  -moz-font-feature-settings: "salt" 1;
+  font-feature-settings: "salt" 1; }
+
+h2 {
+  font-family: 'Hoefler Text SC A', 'Hoefler Text SC B', 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.4em; }
+
+a:hover {
+  color: #F5A623; }
+
+strong {
+  font-weight: 700; }
+
+.wrap {
+  max-width: 580px;
+  margin: 0 auto; }
+  @media (max-width: 30em) {
+    .wrap {
+      width: 90%; } }
+
+.letter-intro, .letter-response {
+  background: #FFFFFF;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #F0F0F0;
+  border-radius: 1px; }
+
+.letter-intro {
+  padding-top: 3.11111rem;
+  padding-bottom: 3.11111rem;
+  margin-bottom: 3.11111rem; }
+
+.letter-response {
+  padding: 3.11111rem 0; }
+
+.letter-header {
+  text-align: center;
+  margin-bottom: 3.11111rem; }
+
+.letter-fleuron {
+  font-family: 'Hoefler Text Fleur A', 'Hoefler Text Fleur B', sans-serif;
+  font-size: 2rem;
+  color: #AAAAAA;
+  line-height: 1; }
+
+.letter-date {
+  font-family: 'Hoefler Text SC A', 'Hoefler Text SC B', 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #AAAAAA; }
+
+.letter-title {
+  font-size: 1.55556rem;
+  font-style: italic; }
+
+.dc {
+  float: left;
+  padding-right: 0.25em;
+  padding-top: 0.1em;
+  line-height: 1;
+  color: #F5A623;
+  font-size: 3.88889rem;
+  font-family: 'Hoefler Text Swashes A', 'Hoefler Text Swashes B', 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
+  font-style: italic; }
+
+.swa {
+  font-family: 'Hoefler Text Swashes A', 'Hoefler Text Swashes B', 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif; }
+
+.subs-link {
+  font-family: 'Hoefler Text SC A', 'Hoefler Text SC B', 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  line-height: 1; }
+
+.break-fleuron:before {
+  font-family: 'Hoefler Text Fleur A', 'Hoefler Text Fleur B', sans-serif;
+  font-size: 2rem;
+  margin: 1.55556rem 0;
+  display: block;
+  color: #D4D4D4;
+  content: "9";
+  text-align: center; }
+
+.aside {
+  font-size: 0.88889rem;
+  color: #AAAAAA;
+  margin: 1em 0; }
+
+.fl {
+  font-family: 'Hoefler Text Fleur A', 'Hoefler Text Fleur B', sans-serif; }
+
+@media (max-width: 30em) {
+  .cramped {
+    display: none; } }
