@@ -88,7 +88,7 @@ gulp.task('htmlmin', function() {
 
 // compile SASS files
 gulp.task('sass', function() {
-  var src = assetsSrc + '/scss/*.scss',
+  var src = assetsSrc + '/scss/**/*.scss',
       dst = assetsSrc + '/css';
 
   return gulp.src(src)
