@@ -6,6 +6,7 @@ layout: story
 permalink: /cheese-bored/
 
 custom_css: cheese-bored
+cover_photo: http://cloud.wikichen.is/serving/stories/cheese-board-pizza/cheeseboard.jpg
 ---
 
 <head>
