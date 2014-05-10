@@ -1,5 +1,9 @@
 <head>
+  {% if page.title == site.name %}
+  <title>{{ site.name }}</title>
+  {% else %}
   <title>{{ page.title }} | {{ site.name }}</title>
+  {% endif %}
   {% include meta.html %}
   {% include twitter_card.html %}
   <link rel="stylesheet" href="//cloud.typography.com/7354672/786004/css/fonts.css">
