@@ -4,6 +4,7 @@ What's Under the Hood
 Welcome to the backstage of my humble theatre on the web. *Mise en Place*.
 
 The purpose of this documentation is twofold:
+
 1. To serve as a reference for my own design and development efforts in the future.
 1. To educate and inform those who wish to understand how I've built and maintained the site.
 
