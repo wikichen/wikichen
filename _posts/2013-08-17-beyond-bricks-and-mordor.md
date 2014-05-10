@@ -2,9 +2,6 @@
 title: "Beyond Bricks & Mordor"
 subtitle: "The Power of Completionism"
 
-layout: post
-comments: true
-
 image_url: /posts/2013/08/legolotr.jpg
 image_alt: "LEGO Lord of the Rings"
 ---
