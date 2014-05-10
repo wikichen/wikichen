@@ -1,22 +1,4 @@
----
-layout: default
----
-
-<body>
-  <div class="container">
-  <article class="post">
-    <div class="content-wrapper">
-      <header class="post-header">
-        <h1 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-        <a href="{{ post.url }}" title="Post Permalink">&infin;</a> &middot;
-        <time class="post-date">{{ page.date | date: "%B %-d, %Y" }}</time>
-      </header>
-      {{ content }}
-      <div class="fleuron"></div>
-    </div>
-    {% include comments.html %}
-    </div>
-  </article>
-  {% include footer.html %}
-  {% include scripts.html %}
-</body>
+<!DOCTYPE html>
+<html lang="en-us">
+  {{ content }}
+</html>
