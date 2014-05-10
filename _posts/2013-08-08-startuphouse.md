@@ -1,11 +1,7 @@
 ---
-layout: post
 title: "StartupHouse"
 subtitle: "A Circus of Dreamers, Fools, and Hackers"
 
-comments: true
-
-image_cover: true
 image_url: /posts/2013/08/startuphouse.jpg
 image_alt: "StartupHouse Wall of Fame"
 ---

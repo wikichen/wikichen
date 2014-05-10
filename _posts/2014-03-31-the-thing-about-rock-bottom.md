@@ -1,9 +1,6 @@
 ---
 title: "The Thing About Rock Bottom"
-date: "2014-03-31 10:14:31 -0700"
 description: "On falling to and climbing out of rock bottom."
-
-layout: post
 
 image_url: /posts/2014/03/rescuetime-summary.png
 ---

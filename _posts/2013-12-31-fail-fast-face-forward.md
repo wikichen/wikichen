@@ -1,16 +1,13 @@
 ---
 title: "Fail Fast, Face Forward"
 subtitle: "Some Hard Lessons Learned in 2013"
-
-layout: post
-comments: true
 ---
 
 Assessing the quality of a bygone year shouldn't be a snap binary decision, but in the case of the last twelve months, there was no shade of grey, and never had I accomplished so little and made so many mistakes than in 2013. But the great thing about failures (and having only twenty-two years on me) is that the more spectacular they are, the more transformative and invaluable the lessons they impart.
 
 I spent the first half of 2013 working on a healthcare startup that never launched, because I started a company with the wrong people and for the wrong reasons. More importantly, we were building something people didn't want. It was one of the most painful mistakes I have ever made in my life, but perhaps the most significant in retrospect.
 
-The second half of the year was an exercise in self-discovery. Divorced from the very venture I thought gave me purpose, I found restitution in the form of a monthlong blogging challenge that rekindled my love for writing. Convinced that design is unequivocably my vocational passion in life, I also applied to fulltime design jobs and ended up at a sharing economy startup called yerdle, where I worked as an interaction designer. It was one of the best teams I've ever worked with. Sadly, we parted ways at the end of the year, because---as fantastic as my colleagues were---I learned that I work more productively and more happily when I get to wear multiple hats and touch all aspects of the product.
+The second half of the year was an exercise in self-discovery. Divorced from the very venture I thought gave me purpose, I found restitution in the form of a monthlong blogging challenge that rekindled my love for writing. Convinced that design is unequivocally my vocational passion in life, I also applied to fulltime design jobs and ended up at a sharing economy startup called yerdle, where I worked as an interaction designer. It was one of the best teams I've ever worked with. Sadly, we parted ways at the end of the year, because---as fantastic as my colleagues were---I learned that I work more productively and more happily when I get to wear multiple hats and touch all aspects of the product.
 
 2013 was not a great year by most anecdotal accounts, but perhaps it marks a turning point where, through miscalculated trials and unwarranted tribulations, the concept of who I am and what I want becomes just a little bit more defined, enough so that charting a better course for the future is a more distinct possibility.
 

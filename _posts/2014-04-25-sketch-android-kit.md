@@ -1,8 +1,9 @@
 ---
-title: "Why I Shipped an Unfinished Android UI Kit"
+title: "The Android UI Kit for Sketch"
 date: "2014-04-25 16:08:31 -0700"
 
 layout: post
+category: linking
 
 image_url: /posts/2014/04/sketch-android-kit-overview.png
 ---

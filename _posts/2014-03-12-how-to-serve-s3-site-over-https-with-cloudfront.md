@@ -1,12 +1,10 @@
 ---
 title: "How to Serve Your S3 Hosted Site over HTTPS with CloudFront"
-subtitle: "Many Thanks to Alistair@AWS"
+
 description: "We'll go over how to set up a free SSL certificate with StartSSL, upload it to AWS IAM store, and configure our CloudFront distribution to serve our Amazon S3 hosted website."
+date: "2014-03-12"
 
 layout: post
-comments: true
-
-typeface: sans-serif
 permalink: /coding/how-to-serve-s3-site-over-https-with-cloudfront/
 ---
 

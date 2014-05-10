@@ -1,15 +1,27 @@
-name: Jonathan E. Chen
-description: "A Journal on Design, Technology, and Life"
+name: Mise en Place
+description: "The Home of Jonathan E. Chen"
 url: http://wikichen.is
 author:
   name: Jonathan E. Chen
   email: hello@wikichen.is
 
-markdown: kramdown
-
-pygments: true
+highlighter: rouge
 
 permalink: /:year/:month/:day/:title/
+
+collections:
+  projects:
+    output: true
+  stories:
+    output: true
+  books:
+    output: true
+
+defaults:
+  - scope:
+      path: "" # select all filesd
+    values:
+      layout: "post"
 
 cdn_baseurl: http://cloud.wikichen.is
 cdn_url: http://cloud.wikichen.is/serving

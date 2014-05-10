@@ -2,12 +2,11 @@
 title: "High School Never Goes Away"
 subtitle: "Catching up with an Old Teacher and Friend"
 description: "I catch up with my favorite high school teacher."
-date: "2014-03-14 10:47:56 -0700"
-
-layout: post
 
 image_url: "/posts/2014/03/dbhs-wan-office.jpg"
 image_alt: "Mrs. Wan's old office at DBHS"
+
+published: false
 ---
 
 Perhaps it was the fact that I'm currently on hiatus from life with ample free time to reflect and work on my own projects, or maybe the fact that I'm a little lost in life and I have been wandering for years and the last bout of clarity in which I knew what to make of myself was in high school, if my memory serves me correctly. For whatever the reason, I decided to pay my favorite high school teacher a visit yesterday.
