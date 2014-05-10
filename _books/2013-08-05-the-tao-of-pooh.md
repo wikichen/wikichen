@@ -3,9 +3,6 @@ title: "The Tao of Pooh"
 subtitle: "A Guidebook to Happiness"
 book_author: "Benjamin Hoff"
 
-layout: post
-comments: true
-
 image_url: /books/the-tao-of-pooh.jpg
 image_alt: "The Tao of Pooh by Benjamin Hoff"
 
