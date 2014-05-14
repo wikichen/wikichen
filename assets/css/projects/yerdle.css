@@ -1,12 +1,5 @@
 /*---------------------------------------------------------------------------//
 
-  Main.scss
-
-  This is the primary stylesheet. Keep it clean, boys.
-
-//---------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------//
-
   Module: All
 
   Include to get all modules.
@@ -36,13 +29,8 @@
 .clearfix {
   *zoom: 1; }
 
-/*---------------------------------------------------------------------------//
-
-  Partials: All
-
-  Include to get all partials.
-
-//---------------------------------------------------------------------------*/
+/* Fonts */
+/* Colors */
 /*---------------------------------------------------------------------------//
 
   Partial: Reset
@@ -106,165 +94,6 @@ img {
 
 /*---------------------------------------------------------------------------//
 
-  Partial: Layout
-
-  Specific stylings for sections go here.
-
-//---------------------------------------------------------------------------*/
-.container {
-  max-width: 600px;
-  margin: 0 auto; }
-  @media (max-width: 48em) {
-    .container {
-      max-width: 90%; } }
-
-.content-wrapper {
-  margin: 0 auto;
-  max-width: 600px; }
-
-/*---------------------------------------------------------------------------//
-
-  Partial: Typography
-
-//---------------------------------------------------------------------------*/
-h1 {
-  color: #463f40;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  font-size: 2.625rem;
-  line-height: 1;
-  margin-bottom: 2.625rem; }
-  @media (max-width: 30em) {
-    h1 {
-      font-size: 1.75rem; } }
-
-h2 {
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  font-weight: 600; }
-
-a {
-  color: inherit;
-  text-decoration: underline solid #463f40;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer; }
-  a:hover {
-    color: #f7564b; }
-
-.caps {
-  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  text-transform: uppercase; }
-
-em, .em {
-  font-style: italic; }
-
-strong, .strong {
-  font-weight: bold; }
-
-del, .del {
-  text-decoration: line-through; }
-
-blockquote {
-  overflow: hidden;
-  border-left: 2px solid #8a9999;
-  padding-left: 1.75rem;
-  color: #463f40;
-  margin-bottom: 1.75rem; }
-  @media (max-width: 30em) {
-    blockquote {
-      margin-left: 0; } }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-p {
-  margin-bottom: 1.75rem; }
-
-.amp {
-  font-family: Baskerville, Palatino, "Book Antiqua", serif;
-  font-style: italic; }
-
-hr {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
-  border: 1px solid #d4d4d4;
-  width: 60px; }
-
-.fleuron:before {
-  content: "❦";
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  color: #d4d4d4;
-  font-size: 28px;
-  margin-top: 1.75rem; }
-
-ul {
-  list-style-type: disc;
-  margin-bottom: 1.75rem; }
-  ul li {
-    margin-left: 1.75rem; }
-
-ol {
-  list-style-type: decimal;
-  margin-bottom: 1.75rem; }
-  ol li {
-    margin-left: 1.75rem; }
-
-pre, code {
-  font-family: 'Source Code Pro', Monaco, Courier, Verdana, monospace;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-color: #f8f8f8; }
-
-code {
-  font-size: 0.9rem;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 100%;
-  line-height: 1.5;
-  padding: 0 2px;
-  overflow: auto; }
-
-pre {
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-color: #f8f8f8;
-  padding: 0.3em 0.6em;
-  overflow-y: hidden;
-  overflow-x: auto;
-  margin-bottom: 1.75rem; }
-  pre code {
-    padding: 0;
-    border: none; }
-
-/*---------------------------------------------------------------------------//
-
-  Partial: Figures
-
-  Images, captions, media, you know the drill.
-
-//---------------------------------------------------------------------------*/
-figure {
-  border-top: 1px solid #d4d4d4;
-  border-bottom: 1px solid #d4d4d4;
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-  padding-top: 6px;
-  padding-bottom: 6px; }
-
-figcaption {
-  font-size: 12px;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  color: #aaa;
-  text-align: right;
-  line-height: 1.3; }
-  @media (max-width: 30em) {
-    figcaption {
-      font-size: 10px; } }
-
-/*---------------------------------------------------------------------------//
-
   Partial: Grids
 
 //---------------------------------------------------------------------------*/
@@ -313,7 +142,7 @@ figcaption {
   list-style: none;
   margin-left: -20px; }
 
-.grid > .grid__col--2-of-2, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
+.grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
   width: 100%; }
 
 .grid > .grid__col--1-of-2, .grid > .grid__col--2-of-4, .grid > .grid__col--3-of-6, .grid > .grid__col--4-of-8, .grid > .grid__col--6-of-12 {
@@ -322,7 +151,7 @@ figcaption {
 .grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--2-of-6, .grid > .grid__col--4-of-12 {
   width: 33.33333%; }
 
-.grid > .grid__col--2-of-3, .grid > .grid__col--4-of-6, .grid > .grid__col--8-of-12, .grid > .page--home .home-cover .home-cover__text, .page--home .home-cover .grid > .home-cover__text {
+.grid > .grid__col--2-of-3, .grid > .grid__col--4-of-6, .grid > .grid__col--8-of-12 {
   width: 66.66667%; }
 
 .grid > .grid__col--1-of-4, .grid > .grid__col--2-of-8, .grid > .grid__col--3-of-12 {
@@ -493,7 +322,7 @@ figcaption {
 .grid > .grid__col--pull-7-of-12 {
   margin-left: -58.33333%; }
 
-.grid > .grid__col--10-of-12 {
+.grid > .grid__col--10-of-12, .grid > .project__main {
   width: 83.33333%; }
 
 .grid > .grid__col--push-10-of-12 {
@@ -511,7 +340,7 @@ figcaption {
 .grid > .grid__col--pull-11-of-12 {
   margin-left: -91.66667%; }
 
-.grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .page--home .home-cover .home-cover__text, .page--home .home-cover .grid > .home-cover__text, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
+.grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .project__main, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
@@ -521,14 +350,14 @@ figcaption {
   vertical-align: top; }
 
 @media screen and (max-width: 700px) {
-  .grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .page--home .home-cover .home-cover__text, .page--home .home-cover .grid > .home-cover__text, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
+  .grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .project__main, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
     display: block;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     width: auto; } }
 
-.grid .grid__col--centered {
+.grid .grid__col--centered, .grid .project__main, .grid .quote--breakout {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -560,6 +389,122 @@ figcaption {
 
 .grid .grid__col--am {
   vertical-align: middle; }
+
+/*---------------------------------------------------------------------------//
+
+  Partial: Typography
+
+//---------------------------------------------------------------------------*/
+h1 {
+  color: #463f40;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-size: 2.625rem;
+  line-height: 1;
+  margin-bottom: 2.625rem; }
+  @media (max-width: 30em) {
+    h1 {
+      font-size: 1.75rem; } }
+
+h2 {
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-weight: 600; }
+
+a {
+  color: inherit;
+  text-decoration: underline solid #463f40;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer; }
+  a:hover {
+    color: #f7564b; }
+
+.caps {
+  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  text-transform: uppercase; }
+
+em, .em {
+  font-style: italic; }
+
+strong, .strong {
+  font-weight: bold; }
+
+del, .del {
+  text-decoration: line-through; }
+
+blockquote {
+  overflow: hidden;
+  border-left: 2px solid #8a9999;
+  padding-left: 1.75rem;
+  color: #463f40;
+  margin-bottom: 1.75rem; }
+  @media (max-width: 30em) {
+    blockquote {
+      margin-left: 0; } }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+p {
+  margin-bottom: 1.75rem; }
+
+.amp {
+  font-family: Baskerville, Palatino, "Book Antiqua", serif;
+  font-style: italic; }
+
+hr {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  border: 1px solid #d4d4d4;
+  width: 60px; }
+
+.fleuron:before {
+  content: "❦";
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: #d4d4d4;
+  font-size: 28px;
+  margin-top: 1.75rem; }
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 1.75rem; }
+  ul li {
+    margin-left: 1.75rem; }
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 1.75rem; }
+  ol li {
+    margin-left: 1.75rem; }
+
+pre, code {
+  font-family: 'Source Code Pro', Monaco, Courier, Verdana, monospace;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f8f8f8; }
+
+code {
+  font-size: 0.9rem;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  line-height: 1.5;
+  padding: 0 2px;
+  overflow: auto; }
+
+pre {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  padding: 0.3em 0.6em;
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin-bottom: 1.75rem; }
+  pre code {
+    padding: 0;
+    border: none; }
 
 /*---------------------------------------------------------------------------//
 
@@ -711,28 +656,6 @@ figcaption {
 
 .js-nav-up {
   top: -68px; }
-
-/*---------------------------------------------------------------------------//
-
-  Partial: Footer
-
-  Site footer stylings and such.
-
-//---------------------------------------------------------------------------*/
-.site-footer {
-  background-color: #333;
-  color: #d4d4d4;
-  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
-  font-size: 14px;
-  line-height: 1.42857;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem; }
-  .site-footer h3 {
-    font-family: "Mercury SSm SC A", "Mercury SSm SC B", 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-bottom: 0.875rem; }
 
 /*---------------------------------------------------------------------------//
 
@@ -3208,123 +3131,159 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp; }
 
-/*---------------------------------------------------------------------------//
+/* Custom styles */
+.project-header__container {
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
 
-  Pages: All
+.project-header {
+  display: block;
+  min-height: 100%;
+  max-height: 800px;
+  margin: 0 auto;
+  width: 100%;
+  /* Graident: */
+  background-image: -webkit-linear-gradient(270deg, rgba(218, 157, 21, 0.5) 0%, rgba(19, 126, 193, 0.5) 100%), url('http://cloud.wikichen.is/serving/projects/yerdle/yerdle-cover.jpg');
+  background-image: linear-gradient(-180deg, rgba(218, 157, 21, 0.5) 0%, rgba(19, 126, 193, 0.5) 100%), url('http://cloud.wikichen.is/serving/projects/yerdle/yerdle-cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (max-width: 30em) {
+    .project-header {
+      height: 400px; } }
 
-  Include to get all page styles.
+.project-title {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  font-family: "museo-sans", Arial, sans-serif;
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: -2px;
+  color: #fff; }
+  @media (max-width: 30em) {
+    .project-title {
+      padding-top: 3.5em;
+      padding-bottom: 3.5em;
+      font-size: 3em; } }
 
-//---------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------//
-
-  Partial: Index
-
-  Styles for index pages.
-
-//---------------------------------------------------------------------------*/
-.page--home {
-  background: url('/assets/images/exploratorium-kid.jpg') no-repeat center center fixed;
-  background-size: cover; }
-  .page--home .home-cover {
-    padding-top: 10em;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-    color: #fff; }
-    .page--home .home-cover .home-cover__text {
-      position: absolute; }
-    .page--home .home-cover .home-cover__title {
-      margin-bottom: 0.25em;
-      color: #fff;
-      font-size: 2.75em;
-      font-weight: 600;
-      line-height: 1.2; }
-    .page--home .home-cover .home-cover__description {
-      font-size: 0.875em; }
-    .page--home .home-cover .home-cover__caption {
-      position: fixed;
-      bottom: 0;
-      right: 3em;
-      width: 28em;
-      font-size: 12px;
-      text-align: right;
-      line-height: 1.3; }
-    @media (max-width: 48em) {
-      .page--home .home-cover {
-        margin: 0 auto;
-        max-width: 92%;
-        font-size: 90%; } }
-
-.page--about .about__content {
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif; }
-  .page--about .about__content .about__photo {
-    margin-top: 8em; }
-  .page--about .about__content section {
-    margin-top: 2em;
-    margin-bottom: 4em; }
-  .page--about .about__content h2 {
-    margin-bottom: 0.5em;
-    font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-    font-size: 1.25em; }
-  @media (max-width: 48em) {
-    .page--about .about__content {
-      margin: 0 auto;
+.project__main {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .project__main h2 {
+    margin-bottom: 1em;
+    font-family: "museo-sans", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2; }
+  @media (max-width: 30em) {
+    .project__main {
       max-width: 92%; } }
 
-/*---------------------------------------------------------------------------//
+.project__section, .project__section--one, .project__section--two, .project__section--three {
+  overflow: hidden;
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
-  Partial: Post
+.project__section--one {
+  background-color: #DA9D15;
+  color: #fff; }
 
-  Post stylings.
+.project__section--two {
+  background-color: #fff;
+  color: #333; }
 
-//---------------------------------------------------------------------------*/
-.posts, .post {
-  margin-top: 7rem;
-  margin-bottom: 1.75rem; }
+.project__subsection, .project__subsection--branding, .project__subsection--redesign {
+  padding-top: 4em;
+  min-height: 300px; }
 
-.post-header {
-  margin-bottom: 1.75rem; }
+.project__subsection--branding {
+  color: #fff;
+  background-image: -webkit-linear-gradient(270deg, rgba(55, 55, 55, 0.9) 0%, rgba(55, 55, 55, 0.9) 100%), url('http://cloud.wikichen.is/serving/projects/yerdle/branding-mindmap.jpg');
+  background-image: linear-gradient(-180deg, rgba(55, 55, 55, 0.9) 0%, rgba(55, 55, 55, 0.9) 100%), url('http://cloud.wikichen.is/serving/projects/yerdle/branding-mindmap.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
-.post-title {
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  margin-top: 1.75rem;
-  margin-bottom: 0; }
-  .post-title a {
-    text-decoration: none; }
-    .post-title a:hover {
-      color: inherit; }
+.project__subsection--redesign {
+  padding-bottom: 2em;
+  color: #137EC1;
+  background-image: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.92) 100%), url('http://cloud.wikichen.is/serving/projects/yerdle/redesign-permissions-flow.jpg');
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.92) 100%), url('http://cloud.wikichen.is/serving/projects/yerdle/redesign-permissions-flow.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
-.post-date {
-  color: #aaa;
-  font-size: 14px;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif; }
+.project__section--three {
+  background-color: #137EC1;
+  color: #fff; }
 
-.post-excerpt p {
-  margin-bottom: 0; }
+.quote--breakout {
+  margin-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0;
+  font: 300 2em/1.3 "museo-sans", Arial, sans-serif;
+  text-align: center;
+  color: #137EC1;
+  border-left: none;
+  border-top: 2px solid;
+  border-bottom: 2px solid; }
 
-.post-tags {
-  text-transform: lowercase;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  font-size: 0.7rem;
-  padding: 0.1em 0.4em 0.2em; }
+.project__figure {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  overflow: auto; }
 
-.tag-writing {
-  border-radius: 5px;
-  border: 1px solid #5C6666;
-  color: #5C6666; }
+.project__figure--breakout {
+  margin: 0 auto;
+  max-width: 800px; }
 
-.tag-design {
-  border-radius: 5px;
-  border: 1px solid #2d72d9;
-  color: #2d72d9; }
+.project__figure--scrollable {
+  min-width: 2180px; }
 
-.tag-making {
-  border-radius: 5px;
-  border: 1px solid #ff6600;
-  color: #ff6600; }
+.figure__discovery-concepts {
+  margin: 0 auto;
+  background: url('http://cloud.wikichen.is/serving/projects/yerdle/discovery-concepts-categories.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  min-height: 600px; }
 
-.tag-reading {
-  border-radius: 5px;
-  border: 1px solid #251957;
-  color: #251957; }
+.figure__discovery-wireframes {
+  background: url('http://cloud.wikichen.is/serving/projects/yerdle/discovery-wireframes.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  min-height: 400px;
+  min-width: 2756px; }
+
+.figure__branding-questions {
+  margin: 0 auto;
+  background: url('http://cloud.wikichen.is/serving/projects/yerdle/branding-questions.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  min-height: 300px; }
+
+.figure__branding-deliverables {
+  margin: 0 auto;
+  background: url('http://cloud.wikichen.is/serving/projects/yerdle/branding-deliverables.jpg') center top;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  max-height: 1050px; }
+
+.figure__redesign-userflow {
+  background: url('http://cloud.wikichen.is/serving/projects/yerdle/redesign-userflow.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px; }
+
+.figure__caption {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "museo-sans", Arial, sans-serif; }
+
+.mockup {
+  box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.5); }
