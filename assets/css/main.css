@@ -3224,6 +3224,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 //---------------------------------------------------------------------------*/
 .page--home {
   background: url('/assets/images/exploratorium-kid.jpg') no-repeat center center fixed;
+  background-size: 100%;
   background-size: cover; }
   .page--home .home-cover {
     padding-top: 10em;
