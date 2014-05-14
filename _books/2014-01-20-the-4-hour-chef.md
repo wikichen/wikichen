@@ -4,9 +4,6 @@ subtitle: "How Not to Write a Cooking Book"
 book_title: "The 4-Hour Chef"
 book_author: "Timothy Ferriss"
 
-layout: post
-comments: false
-
 image_url: /books/the-4-hour-chef.jpg
 image_alt: "The 4-Hour Chef by Tim Ferriss"
 

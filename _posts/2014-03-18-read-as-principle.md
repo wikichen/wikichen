@@ -1,5 +1,5 @@
 ---
-title: "Read as a Matter of Personal Principle"
+title: "Read as Principle"
 subtitle: "Wise Words from a High School English Teacher"
 description: "And read... read all the time... read as a matter of principle, as a matter of self-respect. Read as a nourishing staple of life."
 ---

@@ -5,9 +5,6 @@ book_title: "Zen and the Art of Motorcycle Maintenance"
 book_author: "Robert Pirsig"
 description: "Takeaways from the book that's not about motorcycles."
 
-layout: post
-comments: false
-
 image_url: /books/zen-and-the-art-of-motorcycle-maintenance.jpg
 image_alt: "Zen and the Art of Motorcycle Maintenance by Robert Pirsig"
 

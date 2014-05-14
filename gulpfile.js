@@ -44,7 +44,7 @@ gulp.task('markdown', ['jekyll-build'], function() {
 
 // lint task
 gulp.task('lint', function() {
-  return gulp.src('./_assets/js/*.js')
+  return gulp.src('./assets/js/*.js')
     .pipe(plugins.cached('linting'))
     .pipe(plugins.jshint())
     .pipe(plugins.jshint.reporter('default'));
@@ -52,16 +52,15 @@ gulp.task('lint', function() {
 
 // concatenate & minify js
 gulp.task('scripts', function() {
-  var src = assetsSrc + '/js/*.js',
+  var src = './assets/js/*.js',
       dst = assetsDst + '/js';
 
   return gulp.src(src)
-    .pipe(plugins.concat('all.js'))
+    .pipe(plugins.changed(src))
+    //.pipe(plugins.uglify())
     .pipe(gulp.dest(dst))
-    .pipe(plugins.rename('all.min.js'))
-    .pipe(plugins.uglify())
     .pipe(plugins.size())
-    .pipe(gulp.dest(dst));
+    .pipe(plugins.connect.reload());
 });
 
 // minify new images
@@ -94,6 +93,7 @@ gulp.task('sass', function() {
   return gulp.src(src)
     .pipe(plugins.changed(src))
     .pipe(plugins.sass({
+        errLogToConsole: true,
         noCache: true,
         quiet: true
       }))
@@ -106,7 +106,7 @@ gulp.task('sass', function() {
 
 // LiveReload for CSS
 gulp.task('css', function(){
-  var src = assetsSrc + '/css/*.css';
+  var src = assetsSrc + '/css/**/*.css';
 
   return gulp.src(src)
     .pipe(plugins.changed(assetsSrc + '/css/**/*'))
@@ -121,7 +121,7 @@ gulp.task('watch', function() {
   gulp.watch(['./**/*.md'].concat(ignoredFolders), ['markdown']);
   gulp.watch(assetsSrc + '/scss/**/*.scss', ['sass']);
   gulp.watch(assetsSrc + '/css/**/*.css', ['css']);
-  gulp.watch(assetsSrc + '/js/*.js', ['lint', 'scripts']);
+  gulp.watch(assetsSrc + '/js/**/.js', ['scripts']);
 });
 
 gulp.task('clean', function() {
@@ -131,6 +131,7 @@ gulp.task('clean', function() {
 
 // default task
 //gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
-gulp.task('default', ['clean', 'jekyll-build', 'sass', 'css'], function() {
+gulp.task('default', ['clean', 'jekyll-build', 'sass', 'css',
+                      'scripts'], function() {
   return gulp.start('connect', 'watch');
 });

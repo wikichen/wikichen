@@ -1,5 +1,4 @@
 name: Mise en Place
-description: "The Home of Jonathan E. Chen"
 url: http://wikichen.is
 author:
   name: Jonathan E. Chen
@@ -7,7 +6,7 @@ author:
 
 highlighter: rouge
 
-permalink: /:year/:month/:day/:title/
+permalink: /writing/:title/
 
 collections:
   projects:

@@ -5,6 +5,8 @@ description: "On the perverse rise of accessory culture."
 
 image_url: /posts/2014/03/steve-jobs-iphone4.jpg
 image_alt: "Steve Jobs holding an iPhone 4"
+
+published: false
 ---
 
 In a press conference following the debacle of the iPhone 4's reception-blocking antenna problem, cheekily dubbed "Antennagate" by frenzied media and indignant consumers, Steve Jobs announced onstage that Apple would be giving away free bumper cases to iPhone 4 owners.

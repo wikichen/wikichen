@@ -82,7 +82,7 @@ table {
   position: relative; }
 
 html {
-  color: #463F40;
+  color: #463f40;
   font: 112.5%/1.55556 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
@@ -103,7 +103,7 @@ img {
 
 //---------------------------------------------------------------------------*/
 h1 {
-  color: #463F40;
+  color: #463f40;
   font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
   font-size: 2.33333rem;
   line-height: 1;
@@ -118,12 +118,12 @@ h2 {
 
 a {
   color: inherit;
-  text-decoration: underline solid #463F40;
+  text-decoration: underline solid #463f40;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer; }
   a:hover {
-    color: #c0362c; }
+    color: #F5A623; }
 
 .caps {
   font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
@@ -140,9 +140,9 @@ del, .del {
 
 blockquote {
   overflow: hidden;
-  border-left: 2px solid #8A9999;
+  border-left: 2px solid #8a9999;
   padding-left: 1.55556rem;
-  color: #463F40;
+  color: #463f40;
   margin-bottom: 1.55556rem; }
   @media (max-width: 30em) {
     blockquote {
@@ -162,7 +162,7 @@ p {
 hr {
   margin-top: 3.11111rem;
   margin-bottom: 3.11111rem;
-  border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
   width: 60px; }
 
 .fleuron:before {
@@ -170,7 +170,7 @@ hr {
   display: block;
   text-align: center;
   margin: 0 auto;
-  color: #D4D4D4;
+  color: #d4d4d4;
   font-size: 28px;
   margin-top: 1.55556rem; }
 
@@ -230,7 +230,7 @@ h1 {
   font-size: 2.66667rem;
   font-style: italic;
   line-height: 1;
-  color: #463F40;
+  color: #463f40;
   margin-bottom: 0.77778rem; }
   h1 a {
     text-decoration: none; }
@@ -238,7 +238,7 @@ h1 {
 
 .page-desc {
   font-style: italic;
-  color: #AAAAAA;
+  color: #aaa;
   font-size: 1rem; }
 
 .bracket {
@@ -288,14 +288,14 @@ strong {
 .letter-fleuron {
   font-family: 'Hoefler Text Fleur A', 'Hoefler Text Fleur B', sans-serif;
   font-size: 2rem;
-  color: #AAAAAA;
+  color: #aaa;
   line-height: 1; }
 
 .letter-date {
   font-family: 'Hoefler Text SC A', 'Hoefler Text SC B', 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
   font-weight: normal;
   text-transform: uppercase;
-  color: #AAAAAA; }
+  color: #aaa; }
 
 .letter-title {
   font-size: 1.55556rem;
@@ -326,13 +326,13 @@ strong {
   font-size: 2rem;
   margin: 1.55556rem 0;
   display: block;
-  color: #D4D4D4;
+  color: #d4d4d4;
   content: "9";
   text-align: center; }
 
 .aside {
   font-size: 0.88889rem;
-  color: #AAAAAA;
+  color: #aaa;
   margin: 1em 0; }
 
 .fl {

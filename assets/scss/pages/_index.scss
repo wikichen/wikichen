@@ -1,0 +1,87 @@
+/*---------------------------------------------------------------------------//
+
+  Partial: Index
+
+  Styles for index pages.
+
+//---------------------------------------------------------------------------*/
+
+.page--home {
+  background: url('/assets/images/exploratorium-kid.jpg')
+              no-repeat center center fixed;
+  background-size: cover;
+
+  .home-cover {
+    padding-top: 10em;
+
+    font-family: $font-sans;
+    color: $white;
+
+    .home-cover__text {
+      @extend .grid__col--8-of-12;
+      position: absolute;
+    }
+
+    .home-cover__title {
+      margin-bottom: 0.25em;
+
+      color: $white;
+      font-size: 2.75em;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .home-cover__description {
+      font-size: 0.875em;
+    }
+
+    .home-cover__caption {
+
+      position: fixed;
+      bottom: 0;
+      right: 3em;
+
+      width: 28em;
+
+      font-size: 12px;
+      text-align: right;
+      line-height: 1.3;
+    }
+
+    @media (max-width: $breakpoint-medium) {
+      margin: 0 auto;
+      max-width: 92%;
+      font-size: 90%;
+    }
+
+  }
+
+}
+
+.page--about {
+
+  .about__content {
+    font-family: $font-sans;
+
+    .about__photo {
+      margin-top: 8em;
+    }
+
+    section {
+      margin-top: 2em;
+      margin-bottom: 4em;
+    }
+
+    h2 {
+      margin-bottom: 0.5em;
+
+      font-family: $font-sans-sc;
+      font-size: 1.25em;
+    }
+
+    @media (max-width: $breakpoint-medium) {
+      margin: 0 auto;
+      max-width: 92%;
+    }
+  }
+}
