@@ -167,6 +167,9 @@ permalink: /working/yerdle/
         <div class="grid__col--1-of-2">
           <img class="mockup" src="http://cloud.wikichen.is/serving/projects/yerdle/redesign-details.png">
         </div>
+        <div class="project__main">
+          <p>Yerdle took a chance on me and brought me onto the team as an unproven designer, gave me the room to discover and grow my design skills and sensibilities, and taught me how to work and function well in a nimble team. Although my time there was short, I'll always be fond of and grateful for the experience.</p>
+        </div>
         <div class="grid__col--2-of-2">
           <img src="http://cloud.wikichen.is/serving/projects/yerdle/redesign-mockup-phone.png">
         </div>
