@@ -131,7 +131,11 @@ gulp.task('clean', function() {
 
 // default task
 //gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
-gulp.task('default', ['clean', 'jekyll-build', 'sass', 'css',
-                      'scripts'], function() {
-  return gulp.start('connect', 'watch');
+gulp.task('default', function() {
+  runseq('clean',
+         ['jekyll-build', 'sass'],
+         ['css', 'scripts'],
+         function() {
+           return gulp.start('connect', 'watch');
+  });
 });
