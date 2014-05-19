@@ -589,10 +589,10 @@ figcaption {
     transition: 0.4s; }
 
 .site-nav--solid {
-  background-color: #333;
+  background-color: #111;
   color: #fff; }
   .site-nav--solid:hover {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.7); }
 
 .site-nav--clear {
   position: absolute;
@@ -641,7 +641,7 @@ figcaption {
 .site-nav__dropdown {
   display: none;
   padding-top: 6em;
-  background-color: #333;
+  background-color: #111;
   color: #fff; }
 
 @media (max-width: 700px) {

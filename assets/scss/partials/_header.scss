@@ -33,10 +33,10 @@
 .site-nav--solid {
   @extend .site-nav;
 
-  background-color: $black;
+  background-color: #111;
   color: $white;
   &:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.7);
   }
 }
 
@@ -103,7 +103,7 @@
   display: none;
   padding-top: 6em;
 
-  background-color: $black;
+  background-color: #111;
   color: $white;
 }
 
