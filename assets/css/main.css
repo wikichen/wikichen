@@ -699,6 +699,9 @@ figcaption {
   font-size: 0.75rem;
   line-height: 1.5;
   text-align: center; }
+  @media (max-width: 30em) {
+    .nav-social__description {
+      max-width: 28em; } }
 
 .nav-social__icons {
   margin-top: 1.5em;
