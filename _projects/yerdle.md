@@ -2,6 +2,7 @@
 title: Yerdle
 layout: story
 permalink: /working/yerdle/
+description: "I was a product designer at yerdle from September to December of 2013."
 ---
 
 <head>

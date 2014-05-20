@@ -1,0 +1,24 @@
+---
+title: Projects
+layout: default
+---
+
+<body class=="page--projects" id="projects-page">
+  {% include header.html %}
+<div class="container">
+  <div class="content-wrapper">
+    <section id="posts" class="posts">
+      {% for p in site.projects %}
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title"><a href="{{ p.url }}">{{ p.title }}</a></h1>
+        </header>
+        <div class="post-description">{{ p.description }}</div>
+      </article>
+      <br>
+      {% endfor %}
+    </section>
+  </div>
+</div>
+  {% include scripts.html %}
+</body>
