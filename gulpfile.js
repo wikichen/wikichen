@@ -129,6 +129,12 @@ gulp.task('clean', function() {
     .pipe(plugins.clean());
 });
 
+gulp.task('deploy', ['jekyll-build'], function() {
+  return gulp.src('')
+    .pipe(plugins.exec("s3_website push"))
+    .pipe(plugins.exec.reporter());
+});
+
 // default task
 //gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
 gulp.task('default', function() {
