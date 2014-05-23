@@ -6,204 +6,86 @@
 
 //---------------------------------------------------------------------------*/
 
-.site-wrap {
+$font-serif: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, serif;
+$font-sans-sc: "Whitney SSm SC A", "Whitney SSm SC B", $font-sans;
+
+.site-header {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.site-nav__wrap {
   max-width: 768px;
   margin: 0 auto;
+
+  @media (max-width: 800px) {
+    max-width: 90%;
+  }
 }
 
 .site-nav {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-
-  display: block;
-  width: 100%;
-  height: 68px;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-
-  transition: top 0.2s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    transition: 0.4s;
-  }
-}
-
-.site-nav--solid {
-  @extend .site-nav;
-
-  background-color: #111;
-  color: $white;
-  &:hover {
-    background-color: rgba(0,0,0,.7);
-  }
-}
-
-.site-nav--clear {
-  @extend .site-nav;
-  position: absolute;
-  background-color: none;
-  color: $white;
-  &:hover {
-    background-color: rgba(255,255,255,.2);
-  }
-}
-
-.js-nav-clear {
-  background-color: none;
-}
-
-.js-nav-visible {
-  background-color: $black;
-}
-
-.site-nav__content {
   position: relative;
-  height: 1.25em;
-  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
 
-  @media (max-width: $breakpoint-medium) {
-    width: 95%;
-  }
+.site-nav__home {
+  text-decoration: none;
 }
 
 .site-nav__logo {
-  z-index: 1;
-  img {
-    max-height: 18px;
+  margin-top: 1px;
+  padding-top: 18px;
+  padding-bottom: 13px;
+}
+
+.site-nav__title {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: none;
+}
+
+.site-nav__slug {
+  width: auto;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-top: 2px;
+
+  vertical-align: top;
+
+  font-family: $font-serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #aaa;
+
+  @media (max-width: $breakpoint-small) {
+    display: none;
   }
 }
 
 .site-nav__menu {
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
+  display: inline-block;
+  margin-top: 4px;
 
-  height: 20px;
-}
-
-.site-nav__menu-text {
-  right: 0.5em;
-  vertical-align: top;
-
-  font-family: $font-sans-sc;
-  font-size: 1.125rem;
-  line-height: 1;
-}
-
-.site-nav__menu-icon {
-  top: -2px;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.site-nav__dropdown {
-  display: none;
-  padding-top: 6em;
-
-  background-color: #111;
-  color: $white;
-}
-
-.nav-section {
-  @extend .grid__col--1-of-3;
-
-  @media (max-width: 700px) {
-    margin-bottom: 2em;
-  }
-}
-
-.nav-section__title {
-  margin: 0 auto;
-  width: 12.125em;
-
-  text-align: center;
-
-  border: 1px solid;
-}
-
-.nav-section__item {
-  display: block;
-  margin-top: 2.5em;
-
-  text-decoration: none;
-}
-
-.nav-item__title {
-  margin-bottom: 0.25em;
-
-  font-family: $font-sans;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -1px;
-  text-align: center;
-}
-
-.nav-item__description {
-  padding-left: 1em;
-  padding-right: 1em;
-
-  font-style: italic;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  text-align: center;
-
-  @media (max-width: $breakpoint-small) {
-    max-width: 60%;
-    margin: 0 auto;
-  }
-}
-
-.nav-divider {
-  display: block;
-  border: 0;
-  width: 10%;
-  height: 1px;
-  margin: 2em auto 0;
-
-  background-color: $white;
-}
-
-.nav-social {
-  @extend .grid__col--3-of-3;
-
-  margin-top: 2em;
-  padding-bottom: 1em;
-}
-
-.nav-social__description {
-  max-width: 36em;
-  margin: 0 auto;
-
-  font-family: $font-sans;
-  font-size: 0.75rem;
-  line-height: 1.5;
-  text-align: center;
-
-  @media (max-width: $breakpoint-small) {
-    max-width: 28em;
-  }
-}
-
-.nav-social__icons {
-  margin-top: 1.5em;
-
-  text-align: center;
-  list-style: none;
+  list-style-type: none;
 
   li {
-    display: inline-block;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    float: left;
+    margin-left: 2em;
+    margin-top: -3px;
   }
 }
 
-// js stuff
+.site-nav__item {
+  display: block;
 
-.js-nav-up {
-  top: -68px;
+  font-family: $font-sans-sc;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.js-nav-highlight {
+  border-bottom: 4px solid $red;
 }

@@ -18,7 +18,7 @@ description: "I was a product designer at yerdle from September to December of 2
   {% include tracking.html %}
 </head>
 <body>
-  {% include header-clear.html %}
+  {% include header.html %}
   <div class="project-header__container">
     <section class="project-header">
       <h1 class="project-title" id="project-title">Yerdle</h1>
