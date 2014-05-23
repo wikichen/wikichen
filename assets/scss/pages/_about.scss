@@ -1,0 +1,46 @@
+/*---------------------------------------------------------------------------//
+
+  Partial: Index
+
+  Styles for index pages.
+
+//---------------------------------------------------------------------------*/
+
+
+// janky Android fixes for background-size: cover
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.page--about {
+
+  .about__content {
+    font-family: $font-sans;
+
+    .about__photo {
+      margin-top: 8em;
+    }
+
+    section {
+      margin-top: 2em;
+      margin-bottom: 4em;
+    }
+
+    h2 {
+      margin-bottom: 0.5em;
+
+      font-family: $font-sans-sc;
+      font-size: 1.25em;
+    }
+
+    @media (max-width: $breakpoint-medium) {
+      margin: 0 auto;
+      max-width: 92%;
+    }
+  }
+}
