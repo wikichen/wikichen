@@ -25,19 +25,20 @@ gulp.task('connect', function() {
 });
 
 // build jekyll site
-gulp.task('jekyll-build', function() {
+gulp.task('jekyll', function() {
   return gulp.src('')
-    .pipe(plugins.exec("jekyll build"));
+    .pipe(plugins.exec("jekyll build"))
+    .pipe(plugins.exec.reporter());
 });
 
 // reloads when an HTML file is changed and runs jekyll task
-gulp.task('html', ['jekyll-build'], function() {
+gulp.task('html', ['jekyll'], function() {
   return gulp.src(['./**/*.html'].concat(ignoredFolders))
     .pipe(plugins.connect.reload());
 });
 
 // reloads when a Markdown file is changed and runs jekyll task
-gulp.task('markdown', ['jekyll-build'], function() {
+gulp.task('markdown', ['jekyll'], function() {
   return gulp.src(['./**/*.md'].concat(ignoredFolders))
     .pipe(plugins.connect.reload());
 });
@@ -129,7 +130,7 @@ gulp.task('clean', function() {
     .pipe(plugins.clean());
 });
 
-gulp.task('deploy', ['jekyll-build'], function() {
+gulp.task('deploy', ['jekyll'], function() {
   return gulp.src('')
     .pipe(plugins.exec("s3_website push"))
     .pipe(plugins.exec.reporter());
@@ -139,7 +140,7 @@ gulp.task('deploy', ['jekyll-build'], function() {
 //gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
 gulp.task('default', function() {
   runseq('clean',
-         ['jekyll-build', 'sass'],
+         ['jekyll', 'sass'],
          ['css', 'scripts'],
          function() {
            return gulp.start('connect', 'watch');
