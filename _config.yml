@@ -6,7 +6,7 @@ author:
 
 highlighter: rouge
 
-permalink: /writing/:title/
+permalink: /sharing/:title/
 
 collections:
   projects:

@@ -1,7 +1,7 @@
 ---
 title: Yerdle
 layout: story
-permalink: /working/yerdle/
+permalink: /yerdling/
 description: "I was a product designer at yerdle from September to December of 2013."
 ---
 
