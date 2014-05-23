@@ -90,7 +90,7 @@ table {
 
 html {
   color: #463f40;
-  font: 100%/1.75 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
+  font: 100%/1.75 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
@@ -165,7 +165,7 @@ del, .del {
 
 blockquote {
   overflow: hidden;
-  border-left: 2px solid #8a9999;
+  border-left: 2px solid #f7564b;
   padding-left: 1.75rem;
   color: #463f40;
   margin-bottom: 1.75rem; }
@@ -651,7 +651,6 @@ figcaption {
 .nav-section__title {
   margin: 0 auto;
   width: 12.125em;
-  font-family: "Mercury SSm SC A", "Mercury SSm SC B", 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
   text-align: center;
   border: 1px solid; }
 
@@ -725,15 +724,12 @@ figcaption {
 .site-footer {
   background-color: #333;
   color: #d4d4d4;
-  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
   font-size: 14px;
   line-height: 1.42857;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem; }
   .site-footer h3 {
-    font-family: "Mercury SSm SC A", "Mercury SSm SC B", 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
-    font-weight: normal;
-    text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 0.875rem; }
 
