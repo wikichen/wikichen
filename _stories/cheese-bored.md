@@ -1,6 +1,7 @@
 ---
 title: "Cheese Bored"
 subtitle: "My Weeklong Experimental Affair with Cheese Board Pizza"
+date: "2013-06-17"
 
 layout: story
 permalink: /cheese-bored/
