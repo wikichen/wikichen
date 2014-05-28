@@ -125,9 +125,6 @@ a {
   a:hover {
     color: #F5A623; }
 
-.caps {
-  font-family: 'Whitney SSm SC A', 'Whitney SSm SC B', 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  text-transform: lowercase; }
 
 em, .em {
   font-style: italic; }

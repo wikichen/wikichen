@@ -29,7 +29,7 @@ a {
   &:hover { color: $orange; }
 }
 
-.caps {
+%caps {
   font-family: $font-sans-sc;
   text-transform: lowercase;
 }

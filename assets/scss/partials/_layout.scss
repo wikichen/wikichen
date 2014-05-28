@@ -15,16 +15,7 @@
   }
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-
-  @media (max-width: $breakpoint-medium) {
-    max-width: 90%;
-  }
-}
-
-.content-wrapper {
+.content-wrap {
   margin: 0 auto;
   max-width: 600px;
 }

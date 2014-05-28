@@ -16,6 +16,7 @@ cover_photo: http://cloud.wikichen.is/serving/stories/cheese-board-pizza/cheeseb
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cloud.typography.com/7354672/786004/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/stories/cheese-bored.min.css">
   <script type="text/javascript" src="//use.typekit.net/hqs6gvw.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -23,6 +24,7 @@ cover_photo: http://cloud.wikichen.is/serving/stories/cheese-board-pizza/cheeseb
   {% include tracking.html %}
 </head>
 <body>
+  {% include header.html %}
   <div class="fluid-container">
     <div class="post-header">
       <div class="post-header-text">
