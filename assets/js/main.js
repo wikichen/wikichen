@@ -48,19 +48,10 @@ function hasScrolled() {
 $(document).ready(function() {
 
   // add some animation stuff
-  $('#home-text').addClass('animated fadeInDown');
+  $('#home-quote').addClass('animated fadeInUp');
 
   //if('#site-nav').hasClass('site-nav__clear')
   //  clearInterval(scrollIntervalId);
-
-  $('#site-nav').click(function(e) {
-    e.preventDefault();
-
-    if ($('body').scrollTop() !== 0)
-      $('html, body').animate({ scrollTop: 0 }, "fast");
-
-    $('.site-nav__dropdown').slideToggle(300);
-  });
 
   event.stopPropagation();
 });
