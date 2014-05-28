@@ -2,6 +2,7 @@
 title: "Forever Alone"
 subtitle: "Why Loneliness Matters in the Social Age"
 description: "On the perils and prevalence of loneliness as a problem in our society."
+slug: "On Loneliness"
 
 layout: post
 comments: true

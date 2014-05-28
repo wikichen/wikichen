@@ -1,9 +1,10 @@
 ---
 title: "Kitchen Confidential"
 subtitle: "You Only Go Around Once"
-book_title: "Kitchen Confidential"
-book_author: "Anthony Bourdain"
+author: "Anthony Bourdain"
 
+layout: post
+date: "2013-10-29"
 image_url: /books/kitchen-confidential.jpg
 image_alt: "Kitchen Confidential by Anthony Bourdain"
 

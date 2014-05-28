@@ -16,17 +16,16 @@ $baseline: $baseline-size * 1rem;
 // fonts
 $font-serif: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
 $font-sans: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-$font-sans-sc: "Whitney SSm SC A", "Whitney SSm SC B", $font-sans;
-
-$font-code: 'Source Code Pro', Monaco, Courier, Verdana, monospace;
+$font-sans-sc: 'Whitney SSm SC A', 'Whitney SSm SC B', $font-sans;
+$font-code: 'fira-mono', Monaco, Courier, Verdana, monospace;
 
 // colors
 $red: #f7564b;
 $orange: #f7564b;
 
 $white: #fff;
-$black: #333;
-$gray: #463f40;
+$black: #222;
+$gray: #555;
 $light-gray: #aaa;
 $lighter-gray: #d4d4d4;
 

@@ -16,10 +16,11 @@ collections:
     output: true
   books:
     output: true
+    layout: post
 
 defaults:
   - scope:
-      path: "" # select all filesd
+      path: "" # select all files
     values:
       layout: "post"
 

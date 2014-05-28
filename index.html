@@ -1,20 +1,124 @@
 ---
-title: Mise en Place
+title: Home
+slug: searching
 layout: default
 ---
 
-<body class="page--home" id="home-page">
-  {% include header-clear.html %}
-  <main class="home-cover">
-    <div class="site-wrap">
-      <div class="grid">
-        <div class="home-cover__text" id="home-text">
-          <h1 class="home-cover__title">Welcome to wikichen's exploratorium for design &amp; food.</h1>
-          <p class="home-cover__description">It's still under construction, but feel free to poke around.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <p class="home-cover__caption">I shot this photo for the old Exploratorium in the Presidio. May we all have such intrigue and wonder for life.</p>
-  {% include scripts.html %}
+<body class="site__home" id="home">
+  {% include header.html %}
+  <div class="site-wrap">
+    <section class="home__intro">
+      <blockquote class="intro__quote">
+        <p>“Design is an opportunity to continue telling the story, not just to sum everything up.”</p>
+        <footer>&mdash; <a href="https://twitter.com/Thingnamer">Tate Linden</a> in <cite><a href="http://www.stokefire.com/2008/12/why-should-design-get-off-easy/">Why Should Design Get Off Easy?</a></cite></footer>
+      </blockquote>
+    </section>
+    <main class="grid">
+      <section class="home__section home__section--split">
+        <p class="section__title">Stories</p>
+        <ul class="section-list">
+          <li>
+            <a class="section-item" href="https://dribbble.com/shots/1493845-Hello-Dribbble">
+              <div class="section-item__meta">
+                My Design Story
+              </div>
+              <h2 class="section-item__title">Hello, Dribbble</h2>
+            </a>
+          </li>
+          <li>
+            <a class="section-item" href="/writing/forever-alone/">
+              <div class="section-item__meta">
+                On Loneliness
+              </div>
+              <h2 class="section-item__title">Forever Alone</h2>
+            </a>
+          </li>
+          {% for story in site.stories limit:3 %}
+          <li>
+            <a class="section-item" href="{{ story.url }}">
+              <div class="section-item__meta">
+                {{ story.slug }}
+              </div>
+              <h2 class="section-item__title">{{ story.title }}</h2>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section class="home__section home__section--split">
+        <p class="section__title">Projects</p>
+        <ul class="section-list">
+          <li>
+            <a class="section-item" href="https://github.com/wikichen/sketch-android-kit">
+              <div class="section-item__meta">
+                Design Resource
+              </div>
+              <h2 class="section-item__title">Sketch Android Kit</h2>
+            </a>
+          </li>
+          <li>
+            <a class="section-item" href="/yerdling/">
+              <div class="section-item__meta">
+                Retrospective (2013)
+              </div>
+              <h2 class="section-item__title">Yerdle Case Study</h2>
+            </a>
+          </li>
+          <li>
+            <a class="section-item" href="/personal/">
+              <div class="section-item__meta">
+                Something Personal
+              </div>
+              <h2 class="section-item__title">Letters from Jonathan</h2>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="home__section home__section--split">
+        <p class="section__title">Journal</p>
+        <ul class="section-list">
+          {% for i in site.posts limit:6 %}
+          <li>
+            <a class="section-item" href="{{ i.url }}">
+              <div class="section-item__meta section-item__meta--date">
+                {{ i.date | date: "%d %b %Y" }}
+              </div>
+              <h2 class="section-item__title section-item__title--secondary">{{ i.title }}</h2>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section class="home__section home__section--split">
+        <p class="section__title">Library</p>
+        <ul class="section-list">
+          {% for i in site.books limit:6 | sort: 'date', 'first' %}
+          <li>
+            <a class="section-item" href="{{ i.url }}">
+              <div class="section-item__meta">
+                {{ i.author }}
+              </div>
+              <h2 class="section-item__title section-item__title--secondary">{{ i.title }}</h2>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section class="home__section home__section--full">
+        <p class="section__title">Elsewhere</p>
+        <ul class="section-list section-list--social">
+          {% for i in site.data.social %}
+          <li>
+            <a class="section-item" href="{{ i.url }}">
+              <div class="section-item__meta">
+                {{ i.meta }}
+              </div>
+              <h2 class="section-item__title section-item__title--secondary">{{ i.name }}</h2>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>

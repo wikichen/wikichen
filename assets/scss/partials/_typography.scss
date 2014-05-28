@@ -6,7 +6,7 @@
 
 h1 {
   color: $gray;
-  font-family: $font-sans;
+  font-family: $font-serif;
   font-size: $baseline * 1.5;
   line-height: 1;
   margin-bottom: $baseline * 1.5;
@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-family: $font-sans;
+  font-family: $font-serif;
   font-weight: 600;
 }
 
@@ -31,7 +31,7 @@ a {
 
 .caps {
   font-family: $font-sans-sc;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 em, .em {
@@ -117,12 +117,13 @@ pre, code {
 }
 
 code {
+  display: inline;
   font-size: 0.9rem;
-  display: inline-block;
+  line-height: 1.5;
   vertical-align: middle;
   max-width: 100%;
-  line-height: 1.5;
-  padding: 0 2px;
+
+  padding: 0 5px;
   overflow: auto;
 }
 

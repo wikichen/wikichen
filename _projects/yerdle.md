@@ -1,8 +1,11 @@
 ---
 title: Yerdle
+meta: "Retrospective"
+description: "I was a product designer at yerdle from September to December of 2013."
+
 layout: story
 permalink: /yerdling/
-description: "I was a product designer at yerdle from September to December of 2013."
+slug: yerdling
 ---
 
 <head>
