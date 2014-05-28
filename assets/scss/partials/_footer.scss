@@ -17,7 +17,6 @@
   padding-bottom: $baseline;
 
   h3 {
-    @include caps($font-serif-sc);
     font-size: 16px;
     margin-bottom: $baseline * 0.5;
   }

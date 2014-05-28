@@ -1,14 +1,15 @@
-<nav class="site-nav--solid js-nav-down" id="site-nav" role="navigation" aria-label="primary">
-  <div class="site-wrap site-nav__content">
-    <a class="site-nav__logo">
-      <img src="/assets/images/logo-light.svg">
-    </a>
-    <span class="site-nav__menu">
-      <span class="site-nav__menu-text">Prix Fixe</span>
-      <span class="site-nav__menu-icon">
-        <img src="/assets/images/menu.svg">
-      </span>
-    </span>
-  </div>
-</nav>
-{% include header-dropdown.html %}
+<header class="site-header" id="site-header">
+  <nav class="site-nav" id="site-nav" role="navigation">
+    <div class="site-nav__wrap">
+      <a class="site-nav__home" href="/">
+        <h1 class="site-nav__title">wikichen is</h1>
+        <img class="site-nav__logo js-nav-highlight" src="/assets/images/logo.svg">
+      </a>
+      <!--<div class="site-nav__slug">{{ page.slug }}</div>-->
+      <ul class="site-nav__menu">
+        <!--<li><a class="site-nav__item" href="/sharing/">Journal</a></li>-->
+        <li><a class="site-nav__item" href="/meta/">About</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

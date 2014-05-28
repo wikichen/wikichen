@@ -1,4 +1,5 @@
-name: Mise en Place
+name: wikichen is
+description: wikichen plays here.
 url: http://wikichen.is
 author:
   name: Jonathan E. Chen
@@ -15,10 +16,11 @@ collections:
     output: true
   books:
     output: true
+    layout: post
 
 defaults:
   - scope:
-      path: "" # select all filesd
+      path: "" # select all files
     values:
       layout: "post"
 

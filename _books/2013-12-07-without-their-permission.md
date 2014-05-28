@@ -2,8 +2,10 @@
 title: "Without Their Permission"
 subtitle: "A Rallying Cry for the 21st Century"
 book_title: "Without Their Permission"
-book_author: "Alexis Ohanian"
+author: "Alexis Ohanian"
 
+layout: post
+date: "2013-12-07"
 image_url: /books/without-their-permission.jpg
 image_alt: "Without Their Permission by Alexis Ohanian"
 

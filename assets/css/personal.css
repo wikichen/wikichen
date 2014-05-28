@@ -82,7 +82,7 @@ table {
   position: relative; }
 
 html {
-  color: #463f40;
+  color: #555;
   font: 112.5%/1.55556 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
@@ -103,8 +103,8 @@ img {
 
 //---------------------------------------------------------------------------*/
 h1 {
-  color: #463f40;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  color: #555;
+  font-family: 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
   font-size: 2.33333rem;
   line-height: 1;
   margin-bottom: 2.33333rem; }
@@ -113,21 +113,18 @@ h1 {
       font-size: 1.55556rem; } }
 
 h2 {
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-family: 'Hoefler Text A', 'Hoefler Text B', Georgia, 'Times New Roman', serif;
   font-weight: 600; }
 
 a {
   color: inherit;
-  text-decoration: underline solid #463f40;
+  text-decoration: underline solid #555;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer; }
   a:hover {
     color: #F5A623; }
 
-.caps {
-  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  text-transform: uppercase; }
 
 em, .em {
   font-style: italic; }
@@ -140,9 +137,9 @@ del, .del {
 
 blockquote {
   overflow: hidden;
-  border-left: 2px solid #8a9999;
+  border-left: 2px solid #f7564b;
   padding-left: 1.55556rem;
-  color: #463f40;
+  color: #555;
   margin-bottom: 1.55556rem; }
   @media (max-width: 30em) {
     blockquote {
@@ -187,18 +184,18 @@ ol {
     margin-left: 1.55556rem; }
 
 pre, code {
-  font-family: 'Source Code Pro', Monaco, Courier, Verdana, monospace;
+  font-family: 'fira-mono', Monaco, Courier, Verdana, monospace;
   border: 1px solid #ddd;
   border-radius: 3px;
   background-color: #f8f8f8; }
 
 code {
+  display: inline;
   font-size: 0.9rem;
-  display: inline-block;
+  line-height: 1.5;
   vertical-align: middle;
   max-width: 100%;
-  line-height: 1.5;
-  padding: 0 2px;
+  padding: 0 5px;
   overflow: auto; }
 
 pre {
@@ -230,7 +227,7 @@ h1 {
   font-size: 2.66667rem;
   font-style: italic;
   line-height: 1;
-  color: #463f40;
+  color: #555;
   margin-bottom: 0.77778rem; }
   h1 a {
     text-decoration: none; }

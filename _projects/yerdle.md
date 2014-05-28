@@ -1,8 +1,11 @@
 ---
 title: Yerdle
+meta: "Retrospective"
+description: "I was a product designer at yerdle from September to December of 2013."
+
 layout: story
 permalink: /yerdling/
-description: "I was a product designer at yerdle from September to December of 2013."
+slug: yerdling
 ---
 
 <head>
@@ -18,7 +21,7 @@ description: "I was a product designer at yerdle from September to December of 2
   {% include tracking.html %}
 </head>
 <body>
-  {% include header-clear.html %}
+  {% include header.html %}
   <div class="project-header__container">
     <section class="project-header">
       <h1 class="project-title" id="project-title">Yerdle</h1>
@@ -109,7 +112,7 @@ description: "I was a product designer at yerdle from September to December of 2
     <div class="site-wrap">
       <div class="grid">
         <div class="project__main">
-          <p>The thesis I presented was simple: yerdle is *people*. That's what yerdle is all about, that's why separates yerdle from the likes of craigslist. I wanted to leverage people's connection to things, and passing on those good feelings to other people when they receive those things. From that the direction I conceived was based on real life: real exchanges, real things, real moments, real people. For example, the header from the landing page comprises circular nodes of avatars connected to things; what would be cool is if the graph was dynamic to give you a current snapshot of yerdle's heartbeat, showing the transactions taking place at that moment. The branding also extends to the onboarding screens of the app and the email, with a focus on images and photos. Using yerdle is a choice for a positive lifestyle, and the branding should reflect that, that beyond the stuff there are places to go and people for you to meet.</p>
+          <p>The thesis I presented was simple: yerdle is <em>people</em>. That's what yerdle is all about, that's why separates yerdle from the likes of craigslist. I wanted to leverage people's connection to things, and passing on those good feelings to other people when they receive those things. From that the direction I conceived was based on real life: real exchanges, real things, real moments, real people. For example, the header from the landing page comprises circular nodes of avatars connected to things; what would be cool is if the graph was dynamic to give you a current snapshot of yerdle's heartbeat, showing the transactions taking place at that moment. The branding also extends to the onboarding screens of the app and the email, with a focus on images and photos. Using yerdle is a choice for a positive lifestyle, and the branding should reflect that, that beyond the stuff there are places to go and people for you to meet.</p>
           <p>The feasibility of an image-heavy brand direction was called into question and we moved to a more versastile direction with cartoon characters, but I'm glad I had a chance to undertake this project, to humanize a product and take the creative liberties to really flesh out what it means to impart meaning on a company or brand.</p>
         </div>
       </div>

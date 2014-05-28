@@ -14,12 +14,13 @@ $serif: "minion-pro", serif; // 400i
 $lighter-brown: #ebe5df;
 $light-brown: #d8cbbf;
 $background-color: #ded4c9;
-$text-color: #333333;
+$text-color: #333;
 $dark-brown: #1f1913;
 
 @import "../partials/reset";
 @import "../partials/base";
 @import "../vendor/bootstrap_v2.3.2";
+@import "../partials/header";
 
 /* Custom styles */
 

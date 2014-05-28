@@ -1,0 +1,15 @@
+- name: Twitter
+  url: https://twitter.com/wikichen
+  meta: social
+
+- name: Dribbble
+  url: https://dribbble.com/wikichen
+  meta: design
+
+- name: GitHub
+  url: https://github.com/wikichen
+  meta: code
+
+- name: Email
+  url: mailto:hello@wikichen.is
+  meta: contact

@@ -77,8 +77,8 @@ table {
   position: relative; }
 
 html {
-  color: #463f40;
-  font: 100%/1.75 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
+  color: #555;
+  font: 100%/1.75 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
@@ -91,6 +91,24 @@ html {
 
 img {
   max-width: 100%; }
+
+/*---------------------------------------------------------------------------//
+
+  Partial: Layout
+
+  Specific stylings for sections go here.
+
+//---------------------------------------------------------------------------*/
+.site-wrap {
+  max-width: 768px;
+  margin: 0 auto; }
+  @media (max-width: 48em) {
+    .site-wrap {
+      max-width: 92%; } }
+
+.content-wrap {
+  margin: 0 auto;
+  max-width: 600px; }
 
 /*---------------------------------------------------------------------------//
 
@@ -142,13 +160,13 @@ img {
   list-style: none;
   margin-left: -20px; }
 
-.grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
+.grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
   width: 100%; }
 
 .grid > .grid__col--1-of-2, .grid > .grid__col--2-of-4, .grid > .grid__col--3-of-6, .grid > .grid__col--4-of-8, .grid > .grid__col--6-of-12 {
   width: 50%; }
 
-.grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--2-of-6, .grid > .grid__col--4-of-12 {
+.grid > .grid__col--1-of-3, .grid > .grid__col--2-of-6, .grid > .grid__col--4-of-12 {
   width: 33.33333%; }
 
 .grid > .grid__col--2-of-3, .grid > .grid__col--4-of-6, .grid > .grid__col--8-of-12 {
@@ -340,7 +358,7 @@ img {
 .grid > .grid__col--pull-11-of-12 {
   margin-left: -91.66667%; }
 
-.grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .project__main, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
+.grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .project__main, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
@@ -350,7 +368,7 @@ img {
   vertical-align: top; }
 
 @media screen and (max-width: 700px) {
-  .grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .nav-section, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .project__main, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .nav-social, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
+  .grid > *, .grid > .grid__col--1-of-2, .grid > .grid__col--push-1-of-2, .grid > .grid__col--pull-1-of-2, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--push-2-of-2, .grid > .grid__col--pull-2-of-2, .grid > .grid__col--1-of-3, .grid > .grid__col--push-1-of-3, .grid > .grid__col--pull-1-of-3, .grid > .grid__col--2-of-3, .grid > .grid__col--push-2-of-3, .grid > .grid__col--pull-2-of-3, .grid > .grid__col--3-of-3, .grid > .grid__col--push-3-of-3, .grid > .grid__col--pull-3-of-3, .grid > .grid__col--1-of-4, .grid > .grid__col--push-1-of-4, .grid > .grid__col--pull-1-of-4, .grid > .grid__col--2-of-4, .grid > .grid__col--push-2-of-4, .grid > .grid__col--pull-2-of-4, .grid > .grid__col--3-of-4, .grid > .grid__col--push-3-of-4, .grid > .grid__col--pull-3-of-4, .grid > .grid__col--4-of-4, .grid > .grid__col--push-4-of-4, .grid > .grid__col--pull-4-of-4, .grid > .grid__col--1-of-5, .grid > .grid__col--push-1-of-5, .grid > .grid__col--pull-1-of-5, .grid > .grid__col--2-of-5, .grid > .grid__col--push-2-of-5, .grid > .grid__col--pull-2-of-5, .grid > .grid__col--3-of-5, .grid > .grid__col--push-3-of-5, .grid > .grid__col--pull-3-of-5, .grid > .grid__col--4-of-5, .grid > .grid__col--push-4-of-5, .grid > .grid__col--pull-4-of-5, .grid > .grid__col--5-of-5, .grid > .grid__col--push-5-of-5, .grid > .grid__col--pull-5-of-5, .grid > .grid__col--1-of-6, .grid > .grid__col--push-1-of-6, .grid > .grid__col--pull-1-of-6, .grid > .grid__col--2-of-6, .grid > .grid__col--push-2-of-6, .grid > .grid__col--pull-2-of-6, .grid > .grid__col--3-of-6, .grid > .grid__col--push-3-of-6, .grid > .grid__col--pull-3-of-6, .grid > .grid__col--4-of-6, .grid > .grid__col--push-4-of-6, .grid > .grid__col--pull-4-of-6, .grid > .grid__col--5-of-6, .grid > .grid__col--push-5-of-6, .grid > .grid__col--pull-5-of-6, .grid > .grid__col--6-of-6, .grid > .grid__col--push-6-of-6, .grid > .grid__col--pull-6-of-6, .grid > .grid__col--1-of-8, .grid > .grid__col--push-1-of-8, .grid > .grid__col--pull-1-of-8, .grid > .grid__col--2-of-8, .grid > .grid__col--push-2-of-8, .grid > .grid__col--pull-2-of-8, .grid > .grid__col--3-of-8, .grid > .grid__col--push-3-of-8, .grid > .grid__col--pull-3-of-8, .grid > .grid__col--4-of-8, .grid > .grid__col--push-4-of-8, .grid > .grid__col--pull-4-of-8, .grid > .grid__col--5-of-8, .grid > .grid__col--push-5-of-8, .grid > .grid__col--pull-5-of-8, .grid > .grid__col--6-of-8, .grid > .grid__col--push-6-of-8, .grid > .grid__col--pull-6-of-8, .grid > .grid__col--7-of-8, .grid > .grid__col--push-7-of-8, .grid > .grid__col--pull-7-of-8, .grid > .grid__col--8-of-8, .grid > .grid__col--push-8-of-8, .grid > .grid__col--pull-8-of-8, .grid > .grid__col--1-of-12, .grid > .grid__col--push-1-of-12, .grid > .grid__col--pull-1-of-12, .grid > .grid__col--2-of-12, .grid > .grid__col--push-2-of-12, .grid > .grid__col--pull-2-of-12, .grid > .grid__col--3-of-12, .grid > .grid__col--push-3-of-12, .grid > .grid__col--pull-3-of-12, .grid > .grid__col--4-of-12, .grid > .grid__col--push-4-of-12, .grid > .grid__col--pull-4-of-12, .grid > .grid__col--5-of-12, .grid > .grid__col--push-5-of-12, .grid > .grid__col--pull-5-of-12, .grid > .grid__col--6-of-12, .grid > .grid__col--push-6-of-12, .grid > .grid__col--pull-6-of-12, .grid > .grid__col--7-of-12, .grid > .grid__col--push-7-of-12, .grid > .grid__col--pull-7-of-12, .grid > .grid__col--8-of-12, .grid > .grid__col--push-8-of-12, .grid > .grid__col--pull-8-of-12, .grid > .grid__col--9-of-12, .grid > .grid__col--push-9-of-12, .grid > .grid__col--pull-9-of-12, .grid > .grid__col--10-of-12, .grid > .project__main, .grid > .grid__col--push-10-of-12, .grid > .grid__col--pull-10-of-12, .grid > .grid__col--11-of-12, .grid > .grid__col--push-11-of-12, .grid > .grid__col--pull-11-of-12, .grid > .grid__col--12-of-12, .grid > .grid__col--push-12-of-12, .grid > .grid__col--pull-12-of-12, .grid > .grid__col--2-of-2, .grid > .quote--breakout, .grid > .grid__col--3-of-3, .grid > .grid__col--4-of-4, .grid > .grid__col--5-of-5, .grid > .grid__col--6-of-6, .grid > .grid__col--8-of-8, .grid > .grid__col--12-of-12 {
     display: block;
     margin-left: 0;
     margin-right: 0;
@@ -396,8 +414,8 @@ img {
 
 //---------------------------------------------------------------------------*/
 h1 {
-  color: #463f40;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  color: #555;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
   font-size: 2.625rem;
   line-height: 1;
   margin-bottom: 2.625rem; }
@@ -406,21 +424,18 @@ h1 {
       font-size: 1.75rem; } }
 
 h2 {
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
   font-weight: 600; }
 
 a {
   color: inherit;
-  text-decoration: underline solid #463f40;
+  text-decoration: underline solid #555;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer; }
   a:hover {
     color: #f7564b; }
 
-.caps {
-  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  text-transform: uppercase; }
 
 em, .em {
   font-style: italic; }
@@ -433,9 +448,9 @@ del, .del {
 
 blockquote {
   overflow: hidden;
-  border-left: 2px solid #8a9999;
+  border-left: 2px solid #f7564b;
   padding-left: 1.75rem;
-  color: #463f40;
+  color: #555;
   margin-bottom: 1.75rem; }
   @media (max-width: 30em) {
     blockquote {
@@ -480,18 +495,18 @@ ol {
     margin-left: 1.75rem; }
 
 pre, code {
-  font-family: 'Source Code Pro', Monaco, Courier, Verdana, monospace;
+  font-family: 'fira-mono', Monaco, Courier, Verdana, monospace;
   border: 1px solid #ddd;
   border-radius: 3px;
   background-color: #f8f8f8; }
 
 code {
+  display: inline;
   font-size: 0.9rem;
-  display: inline-block;
+  line-height: 1.5;
   vertical-align: middle;
   max-width: 100%;
-  line-height: 1.5;
-  padding: 0 2px;
+  padding: 0 5px;
   overflow: auto; }
 
 pre {
@@ -513,152 +528,74 @@ pre {
   Site-wide header and navigation foodstuffs.
 
 //---------------------------------------------------------------------------*/
-.site-wrap {
-  max-width: 768px;
-  margin: 0 auto; }
-
-.site-nav, .site-nav--solid, .site-nav--clear {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  display: block;
-  width: 100%;
-  height: 68px;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  -webkit-transition: top 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out;
-  cursor: pointer; }
-  .site-nav:hover, .site-nav--solid:hover, .site-nav--clear:hover {
-    -webkit-transition: 0.4s;
-    transition: 0.4s; }
-
-.site-nav--solid {
-  background-color: #111;
-  color: #fff; }
-  .site-nav--solid:hover {
-    background-color: rgba(0, 0, 0, 0.7); }
-
-.site-nav--clear {
-  position: absolute;
-  background-color: none;
-  color: #fff; }
-  .site-nav--clear:hover {
-    background-color: rgba(255, 255, 255, 0.2); }
-
-.js-nav-clear {
-  background-color: none; }
-
-.js-nav-visible {
-  background-color: #333; }
-
-.site-nav__content {
-  position: relative;
-  height: 1.25em;
-  cursor: pointer; }
-  @media (max-width: 48em) {
-    .site-nav__content {
-      width: 95%; } }
-
-.site-nav__logo {
-  z-index: 1; }
-  .site-nav__logo img {
-    max-height: 18px; }
-
-.site-nav__menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 20px; }
-
-.site-nav__menu-text {
-  right: 0.5em;
-  vertical-align: top;
-  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  font-size: 1.125rem;
-  line-height: 1; }
-
-.site-nav__menu-icon {
-  top: -2px; }
-  .site-nav__menu-icon:hover {
-    cursor: pointer; }
-
-.site-nav__dropdown {
-  display: none;
-  padding-top: 6em;
-  background-color: #111;
-  color: #fff; }
-
-@media (max-width: 700px) {
-  .nav-section {
-    margin-bottom: 2em; } }
-
-.nav-section__title {
-  margin: 0 auto;
-  width: 12.125em;
-  font-family: "Mercury SSm SC A", "Mercury SSm SC B", 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
-  text-align: center;
-  border: 1px solid; }
-
-.nav-section__item {
-  display: block;
-  margin-top: 2.5em;
-  text-decoration: none; }
-
-.nav-item__title {
-  margin-bottom: 0.25em;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -1px;
-  text-align: center; }
-
-.nav-item__description {
-  padding-left: 1em;
-  padding-right: 1em;
-  font-style: italic;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  text-align: center; }
-  @media (max-width: 30em) {
-    .nav-item__description {
-      max-width: 60%;
-      margin: 0 auto; } }
-
-.nav-divider {
-  display: block;
-  border: 0;
-  width: 10%;
-  height: 1px;
-  margin: 2em auto 0;
+.site-header {
+  border-bottom: 1px solid #d3d3d3;
   background-color: #fff; }
 
-.nav-social {
-  margin-top: 2em;
-  padding-bottom: 1em; }
+.site-nav__wrap {
+  max-width: 768px;
+  margin: 0 auto; }
+  @media (max-width: 800px) {
+    .site-nav__wrap {
+      max-width: 90%; } }
 
-.nav-social__description {
-  max-width: 36em;
-  margin: 0 auto;
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.5;
-  text-align: center; }
+.site-nav {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px; }
+
+.site-nav__home {
+  text-decoration: none !important; }
+
+.site-nav__logo {
+  margin-top: 1px;
+  padding-top: 18px;
+  padding-bottom: 13px; }
+
+.site-nav__title {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: none; }
+
+.site-nav__slug {
+  width: auto;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-top: 2px;
+  vertical-align: middle;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1;
+  color: #aaa; }
   @media (max-width: 30em) {
-    .nav-social__description {
-      max-width: 28em; } }
+    .site-nav__slug {
+      display: none; } }
 
-.nav-social__icons {
-  margin-top: 1.5em;
-  text-align: center;
-  list-style: none; }
-  .nav-social__icons li {
-    display: inline-block; }
-    .nav-social__icons li:first-child {
-      margin-left: 0; }
+.site-nav__menu {
+  float: right;
+  display: inline;
+  margin-top: 4px;
+  margin-bottom: 0;
+  list-style-type: none; }
+  .site-nav__menu li {
+    float: left;
+    margin-left: 2em;
+    margin-top: -3px; }
 
-.js-nav-up {
-  top: -68px; }
+.site-nav__item {
+  display: block;
+  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-decoration: none !important;
+  text-transform: lowercase;
+  color: #555; }
+
+.js-nav-highlight {
+  border-bottom: 4px solid #f7564b; }
 
 /*---------------------------------------------------------------------------//
 
@@ -3197,7 +3134,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .project__section--two {
   background-color: #fff;
-  color: #333; }
+  color: #222; }
 
 .project__subsection, .project__subsection--branding, .project__subsection--redesign {
   padding-top: 4em;

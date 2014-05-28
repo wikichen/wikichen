@@ -78,8 +78,8 @@ table {
   position: relative; }
 
 html {
-  color: #463f40;
-  font: 125%/1.4 'Mercury SSm A', 'Mercury SSm B', Georgia, 'Times New Roman', serif;
+  color: #555;
+  font: 125%/1.4 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
@@ -1262,6 +1262,82 @@ a:hover, a:focus {
     height: auto !important;
     overflow: visible !important; } }
 
+/*---------------------------------------------------------------------------//
+
+  Partial: Header
+
+  Site-wide header and navigation foodstuffs.
+
+//---------------------------------------------------------------------------*/
+.site-header {
+  border-bottom: 1px solid #d3d3d3;
+  background-color: #fff; }
+
+.site-nav__wrap {
+  max-width: 768px;
+  margin: 0 auto; }
+  @media (max-width: 800px) {
+    .site-nav__wrap {
+      max-width: 90%; } }
+
+.site-nav {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px; }
+
+.site-nav__home {
+  text-decoration: none !important; }
+
+.site-nav__logo {
+  margin-top: 1px;
+  padding-top: 18px;
+  padding-bottom: 13px; }
+
+.site-nav__title {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: none; }
+
+.site-nav__slug {
+  width: auto;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-top: 2px;
+  vertical-align: middle;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1;
+  color: #aaa; }
+  @media (max-width: 30em) {
+    .site-nav__slug {
+      display: none; } }
+
+.site-nav__menu {
+  float: right;
+  display: inline;
+  margin-top: 4px;
+  margin-bottom: 0;
+  list-style-type: none; }
+  .site-nav__menu li {
+    float: left;
+    margin-left: 2em;
+    margin-top: -3px; }
+
+.site-nav__item {
+  display: block;
+  font-family: "Whitney SSm SC A", "Whitney SSm SC B", 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-decoration: none !important;
+  text-transform: lowercase;
+  color: #555; }
+
+.js-nav-highlight {
+  border-bottom: 4px solid #f7564b; }
+
 /* Custom styles */
 .post-header {
   background: url(http://cloud.wikichen.is/serving/stories/cheese-board-pizza/cheeseboard.jpg) no-repeat center center fixed;
@@ -1329,7 +1405,7 @@ p {
   line-height: 1.5em; }
 
 .post-body p {
-  color: #333333;
+  color: #333;
   margin: 0.9em 0; }
   .post-body p:first-child {
     margin: 0; }

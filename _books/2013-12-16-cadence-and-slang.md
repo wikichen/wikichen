@@ -1,9 +1,11 @@
 ---
-title: "A Quintessential Primer to Interaction Design"
+title: "Cadence & Slang"
 subtitle: "The Quintessential Primer to Interaction Design"
 book_title: "Cadence & Slang"
-book_author: "Nick Disabato"
+author: "Nick Disabato"
 
+layout: post
+date: "2013-12-16"
 image_url: /books/cadence-and-slang.jpg
 image_alt: "Cadence & Slang by Nick Disabato"
 
