@@ -13,3 +13,7 @@
 - name: Email
   url: mailto:hello@wikichen.is
   meta: Ping
+
+- name: Résumé
+  url: https://github.com/wikichen/resume/raw/master/resume.pdf
+  meta: paper
