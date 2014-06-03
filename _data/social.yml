@@ -10,6 +10,10 @@
   url: https://github.com/wikichen
   meta: code
 
+- name: Instagram
+  url: http://instagram.com/djwikichen
+  meta: moments
+
 - name: Email
   url: mailto:hello@wikichen.is
   meta: Ping
@@ -17,3 +21,7 @@
 - name: Résumé
   url: https://github.com/wikichen/resume/raw/master/resume.pdf
   meta: paper
+
+- name: San Francisco
+  url: "https://www.google.com/maps/place/San+Francisco,+CA/"
+  meta: location
