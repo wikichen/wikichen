@@ -1,5 +1,5 @@
 ---
-title: Yerdle
+title: Designing for Yerdle
 subtitle: "Retrospective of My First Product Design Gig"
 description: "I was a product designer at yerdle from September to December of 2013."
 
@@ -22,7 +22,7 @@ layout: story
   {% include header.html %}
   <div class="project-header__container">
     <section class="project-header">
-      <h1 class="project-title" id="project-title">Yerdle</h1>
+      <h1 class="project-title" id="project-title">{{ page.title }}</h1>
     </section>
   </div>
   <div class="project-content site-wrap">
