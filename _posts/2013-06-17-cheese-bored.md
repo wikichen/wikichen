@@ -1,12 +1,8 @@
 ---
 title: "Cheese Bored"
 subtitle: "My Weeklong Experimental Affair with Cheese Board Pizza"
-date: "2013-06-17"
 
 layout: story
-permalink: /cheese-bored/
-slug: "pizza obsessed"
-
 custom_css: cheese-bored
 cover_photo: http://cloud.wikichen.is/serving/stories/cheese-board-pizza/cheeseboard.jpg
 ---

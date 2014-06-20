@@ -2,17 +2,12 @@
 title: "Forever Alone"
 subtitle: "Why Loneliness Matters in the Social Age"
 description: "On the perils and prevalence of loneliness as a problem in our society."
-slug: "On Loneliness"
 
 layout: post
-comments: true
-image_url: /posts/2013/08/snow.jpg
-
-permalink: /writing/forever-alone/
 ---
 
 <figure>
-  <img src="{{ site.cdn_url }}{{ page.image_url }}" alt="Snowpocalypse in Pittsburgh">
+  <img src="{{ site.cdn_url }}/posts/2013/08/snow.jpg" alt="Snowpocalypse in Pittsburgh">
   <figcaption>Snowpocalypse at Carnegie Mellon University, Pittsburgh. &copy; 2010 Jonathan E. Chen</figcaption>
 </figure>
 
