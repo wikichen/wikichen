@@ -12,10 +12,10 @@ layout: story
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cloud.typography.com/7354672/786004/css/fonts.css">
-  <link rel="stylesheet" href="/assets/css/projects/yerdle.min.css">
+  <link rel="stylesheet" href="/assets/css/posts/yerdle.min.css">
   <script type="text/javascript" src="//use.typekit.net/akj2oia.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <!-- put TWITTER CARD stuff here -->
+  {% include twitter_card.html %}
   {% include tracking.html %}
 </head>
 <body>

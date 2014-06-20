@@ -4,11 +4,19 @@
   {% else %}
   <title>{{ site.name }} {{ page.slug }}</title>
   {% endif %}
-  {% include meta.html %}
-  {% include twitter_card.html %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}/feeding">
+  <link rel="shortcut icon" href="/touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" href="/touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="//cloud.typography.com/7354672/786004/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/main.min.css">
   <script type="text/javascript" src="//use.typekit.net/ggd0zlr.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   {% include tracking.html %}
+  {% include twitter_card.html %}
 </head>
