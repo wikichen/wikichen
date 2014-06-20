@@ -1,7 +1,7 @@
 What's Under the Hood
 =====================
 
-Welcome to the backstage of my humble exploratorium on the web. *Mise en Place*.
+Welcome to the source code of @wikichen's work-in-progress personal publication on the web.
 
 The purpose of this documentation is twofold:
 
