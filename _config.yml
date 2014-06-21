@@ -9,15 +9,6 @@ highlighter: rouge
 
 permalink: /:title/
 
-collections:
-  projects:
-    output: true
-  stories:
-    output: true
-  books:
-    output: true
-    layout: post
-
 defaults:
   - scope:
       path: "" # select all files

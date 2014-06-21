@@ -35,3 +35,9 @@ routing_rules:
       host_name: wikichen.is
       replace_key_prefix_with: forever-alone/
       http_redirect_code: 301
+  - condition:
+      key_prefix_equals: coding/how-to-serve-s3-site-over-https-with-cloudfront/
+    redirect:
+      host_name: wikichen.is
+      replace_key_prefix_width: serving-an-s3-site-over-https/
+      http_redirect_code: 301
