@@ -1,8 +1,8 @@
 <head>
-  {% if page.layout == post %}
-  <title>{{ page.title }} | {{ site.name }} sharing</title>
+  {% if page.title == "Home" %}
+  <title>{{ site.name }}</title>
   {% else %}
-  <title>{{ site.name }} {{ page.slug }}</title>
+  <title>{{ page.title }} &middot; {{ site.name }}</title>
   {% endif %}
   {% include meta.html %}
   {% include twitter_card.html %}
