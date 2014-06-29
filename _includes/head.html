@@ -1,5 +1,10 @@
 <head>
+<<<<<<< HEAD
+  {% if page.title == "Home" %}
   <title>{{ site.name }}</title>
+  {% else %}
+  <title>{{ page.title }} &middot; {{ site.name }}</title>
+  {% endif %}
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="{{ site.description }}">
@@ -9,6 +14,7 @@
   <link rel="shortcut icon" href="/touch-icon.png">
   <link rel="apple-touch-icon-precomposed" href="/touch-icon.png">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  {% include twitter_card.html %}
   <link rel="stylesheet" href="//cloud.typography.com/7354672/786004/css/fonts.css">
   <link rel="stylesheet" href="/assets/css/main.min.css">
   <script type="text/javascript" src="//use.typekit.net/ggd0zlr.js"></script>
