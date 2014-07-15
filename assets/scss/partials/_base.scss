@@ -6,12 +6,14 @@
 
 //---------------------------------------------------------------------------*/
 
-// get some universal stylings here, man
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+// use border-box layout model
+// best practice see: http://bit.ly/UbFpd2
+html {
   box-sizing: border-box;
-  position: relative;
+}
+
+*, *:before, *:after {
+  box-sizing: inhert;
 }
 
 html {
