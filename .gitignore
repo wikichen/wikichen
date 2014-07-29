@@ -1,6 +1,5 @@
 # Ignore Jekyll poo
 _site/
-_drafts/
 
 # Ignore SASS crap
 *.sass-cache
