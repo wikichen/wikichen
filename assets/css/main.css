@@ -83,10 +83,13 @@ table {
   Base partial keeps variables and loads all modules.
 
 //---------------------------------------------------------------------------*/
-*, *:before, *:after {
+html {
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative; }
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -moz-box-sizing: inhert;
+  box-sizing: inhert; }
 
 html {
   color: #555;
