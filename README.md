@@ -1,7 +1,7 @@
 What's Under the Hood
 =====================
 
-Welcome to the source code of @wikichen's work-in-progress personal publication on the web.
+Welcome to the source code of @wikichen's work-in-progress personal zine on the web.
 
 The purpose of this documentation is twofold:
 

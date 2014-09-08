@@ -83,10 +83,13 @@ table {
   Base partial keeps variables and loads all modules.
 
 //---------------------------------------------------------------------------*/
-*, *:before, *:after {
+html {
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative; }
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -moz-box-sizing: inhert;
+  box-sizing: inhert; }
 
 html {
   color: #555;
@@ -3134,6 +3137,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   Include to get all page styles.
 
 //---------------------------------------------------------------------------*/
+.site__message {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #f7564b; }
+
 .site__home .home__intro {
   margin-top: 4em;
   margin-bottom: 4em; }

@@ -1,5 +1,5 @@
-name: wikichen is
-description: wikichen plays here.
+name: WIKICHEN
+description: wikichen's personal zine on the web
 url: http://wikichen.is
 author:
   name: Jonathan E. Chen
@@ -7,16 +7,7 @@ author:
 
 highlighter: rouge
 
-permalink: /sharing/:title/
-
-collections:
-  projects:
-    output: true
-  stories:
-    output: true
-  books:
-    output: true
-    layout: post
+permalink: /:title/
 
 defaults:
   - scope:

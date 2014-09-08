@@ -2,17 +2,12 @@
 title: "Forever Alone"
 subtitle: "Why Loneliness Matters in the Social Age"
 description: "On the perils and prevalence of loneliness as a problem in our society."
-slug: "On Loneliness"
 
 layout: post
-comments: true
-image_url: /posts/2013/08/snow.jpg
-
-permalink: /writing/forever-alone/
 ---
 
 <figure>
-  <img src="{{ site.cdn_url }}{{ page.image_url }}" alt="Snowpocalypse in Pittsburgh">
+  <img src="{{ site.cdn_url }}/posts/2013/08/snow.jpg" alt="Snowpocalypse in Pittsburgh">
   <figcaption>Snowpocalypse at Carnegie Mellon University, Pittsburgh. &copy; 2010 Jonathan E. Chen</figcaption>
 </figure>
 
@@ -125,11 +120,9 @@ The amount of time you spend on Facebook, as a recent study found, is [inversely
 
 [happy]: http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0069841
 
-Take a moment to watch this video:
+Take a moment to [watch this video titled *The Innovation of Loneliness*][video].
 
-<div class="video-container">
-  <iframe src="https://player.vimeo.com/video/70534716" width="500" height="281" frameborder="0"></iframe>
-</div>
+[video]: https://vimeo.com/70534716
 
 It's a powerful, sombering reminder that our growing dependence on technology to communicate has serious social repercussions, to which Cohen presents his central thesis:
 
