@@ -14,10 +14,10 @@ $baseline-size: 28 / (16 * ($base-font-size/100%));
 $baseline: $baseline-size * 1rem;
 
 // fonts
-$font-serif: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif;
-$font-sans: 'Whitney SSm A', 'Whitney SSm B', Verdana, Helvetica, sans-serif;
-$font-sans-sc: 'Whitney SSm SC A', 'Whitney SSm SC B', $font-sans;
-$font-code: 'fira-mono', Monaco, Courier, Verdana, monospace;
+$font-serif: 'calluna', Georgia, 'Times New Roman', serif;
+$font-sans: 'franklin-gothic-urw', Verdana, Helvetica, sans-serif;
+$font-display: 'freight-big-pro', Georgia, 'Times New Roman', serif;
+$font-mono: 'fira-mono', Monaco, Courier, Verdana, monospace;
 
 // colors
 $red: #f7564b;

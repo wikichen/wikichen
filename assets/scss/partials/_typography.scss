@@ -30,7 +30,7 @@ a {
 }
 
 %caps {
-  font-family: $font-sans-sc;
+  font-family: $font-sans;
   text-transform: lowercase;
 }
 
@@ -110,7 +110,7 @@ ol {
 
 // code stuff
 pre, code {
-  font-family: $font-code;
+  font-family: $font-mono;
   border: 1px solid #ddd;
   border-radius: 3px;
   background-color: #f8f8f8;

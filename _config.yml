@@ -9,12 +9,6 @@ highlighter: rouge
 
 permalink: /:title/
 
-defaults:
-  - scope:
-      path: "" # select all files
-    values:
-      layout: "post"
-
 cdn_baseurl: http://cloud.wikichen.is
 cdn_url: http://cloud.wikichen.is/serving
 

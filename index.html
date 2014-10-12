@@ -1,27 +1,12 @@
 ---
 title: Home
-slug: "searching"
 layout: default
 ---
 
-<body id="home">
+<body id="home" class="site__home">
   {% include header.html %}
   <div class="site-wrap">
-  <main class="content-wrap">
-    <p class="site__message">Building something new...</p>
-    <section id="posts" class="posts">
-      {% for post in site.posts %}
-      <article class="post">
-        <header class="post__header">
-          <time class="post__date">{{ post.date | date: "%d %b %Y" }}</time>
-          <h1 class="post__title post__title--list">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h1>
-        </header>
-      </article>
-      {% endfor %}
-    </section>
-  </main>
+    <p class="home__intro">Winter is coming.</p>
   </div>
   {% include scripts.html %}
 </body>
