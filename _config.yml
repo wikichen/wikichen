@@ -1,16 +1,14 @@
-name: WIKICHEN
-description: wikichen's personal zine on the web
+name: wikichen
+description: wikichen is a blog
 url: http://wikichen.is
 author:
   name: Jonathan E. Chen
   email: hello@wikichen.is
 
+markdown: kramdown
 highlighter: rouge
 
 permalink: /:title/
-
-cdn_baseurl: http://cloud.wikichen.is
-cdn_url: http://cloud.wikichen.is/serving
 
 enable_disqus: false
 
@@ -18,7 +16,6 @@ exclude: ['Gemfile',
           'gulpfile.js',
           'node_modules',
           'package.json',
-          'Rakefile',
           's3_website.yml',
           'README.md',
           'LICENSE']

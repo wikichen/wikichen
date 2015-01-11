@@ -1,7 +1,4 @@
-# Ignore Jekyll poo
-_site/
-
-# Ignore SASS crap
+_site
 *.sass-cache
 
 # Ignore OS X junk
@@ -17,3 +14,4 @@ Icon
 node_modules/
 
 .env
+_drafts

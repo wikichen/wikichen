@@ -1,148 +1,145 @@
-// include gulp
-var gulp = require('gulp');
-var pkg  = require('./package.json');
+'use strict';
 
-// include gulp-specific plugins
-var plugins = require("gulp-load-plugins")();
+// dependencies
+var gulp = require('gulp');
+var $ = require("gulp-load-plugins")();
+var sass = require('gulp-sass');
 
 // include external plugins not loaded by gulp-load-plugins
-var runseq = require('run-sequence');
+var runSequence = require('run-sequence');
+var browserSync = require('browser-sync');
+var childProc   = require('child_process');
+var del         = require('del');
 
 // global build variables
-var buildDst  = './_site';
-var assetsSrc = './assets',
-    assetsDst = buildDst + '/assets';
+var buildDst  = '_site';
+var assetsSrc = '_assets';
+var assetsDst = buildDst + '/assets';
+var sassPath  = assetsSrc + '/scss';
 
-var ignoredFolders = ['!./node_modules/**/*', '!./_drafts'];
+var paths = {
+  content: [
+    'index.html',
+    '_layouts/*.html',
+    '_includes/*.html',
+    '_posts/*',
+    '_serving/*'
+  ]
+};
 
-// run a LiveReload server
-gulp.task('connect', function() {
-  plugins.connect.server({
-    root: [ buildDst ],
-    port: 4000,
-    livereload: true
+var messages = {
+  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
+
+// for reference see:
+// https://github.com/iamcarrico/gulp-poole/blob/master/index.js
+// https://github.com/dstroot/my_blog/blob/master/gulpfile.js
+// https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/blob/master/gulpfile.js
+
+// -----------------------------------------------------------------------------
+// Clean task
+// -----------------------------------------------------------------------------
+gulp.task('clean', function(cb) {
+  del(['_site/**'], function (err, deletedFiles) {
+    console.log('Files deleted:', deletedFiles.join(', '));
   });
 });
 
-// build jekyll site
-gulp.task('jekyll', function() {
-  return gulp.src('')
-    .pipe(plugins.exec("jekyll build"))
-    .pipe(plugins.exec.reporter());
-});
-
-// reloads when an HTML file is changed and runs jekyll task
-gulp.task('html', ['jekyll'], function() {
-  return gulp.src(['./**/*.html'].concat(ignoredFolders))
-    .pipe(plugins.connect.reload());
-});
-
-// reloads when a Markdown file is changed and runs jekyll task
-gulp.task('markdown', ['jekyll'], function() {
-  return gulp.src(['./**/*.md'].concat(ignoredFolders))
-    .pipe(plugins.connect.reload());
-});
-
-// lint task
-gulp.task('lint', function() {
-  return gulp.src('./assets/js/*.js')
-    .pipe(plugins.cached('linting'))
-    .pipe(plugins.jshint())
-    .pipe(plugins.jshint.reporter('default'));
-});
-
-// concatenate & minify js
-gulp.task('scripts', function() {
-  var src = './assets/js/*.js',
-      dst = assetsDst + '/js';
-
-  return gulp.src(src)
-    .pipe(plugins.changed(src))
-    //.pipe(plugins.uglify())
-    .pipe(gulp.dest(dst))
-    .pipe(plugins.size())
-    .pipe(plugins.connect.reload());
-});
-
-// minify new images
-gulp.task('imagemin', function() {
-  var imgSrc = './uploads/**/*',
-      imgDst = imgSrc;
-
-  return gulp.src(imgSrc)
-    .pipe(changed(imgDst))
-    .pipe(imagemin())
-    .pipe(gulp.dest(imgDst));
-});
-
-// minifiy new or changed HTML pages
-gulp.task('htmlmin', function() {
-  var htmlSrc = './_site/**/*.html',
-      htmlDst = htmlSrc;
-
-  return gulp.src(htmlSrc)
-    .pipe(plugins.changed(htmlDst))
-    .pipe(plugins.minifyHtml())
-    .pipe(gulp.dest(htmlDst));
-});
-
-// compile SASS files
+// -----------------------------------------------------------------------------
+// SASS task
+// -----------------------------------------------------------------------------
 gulp.task('sass', function() {
-  var src = assetsSrc + '/scss/**/*.scss',
-      dst = assetsSrc + '/css';
 
-  return gulp.src(src)
-    .pipe(plugins.changed(src))
-    .pipe(plugins.sass({
-        errLogToConsole: true,
-        noCache: true,
-        quiet: true
-      }))
-    .pipe(plugins.autoprefixer('last 2 versions'))
-    .pipe(gulp.dest(dst))
-    .pipe(plugins.rename({ suffix: '.min' }))
-    .pipe(plugins.minifyCss())
-    .pipe(gulp.dest(dst));
+  // this is using gulp-ruby-sass
+  /* return sass(assetsSrc + '/scss/main.scss')
+    .on('error', function(err) {
+      console.error('Error!', err.message);
+    })
+    .pipe(gulp.dest(assetsDst + '/css'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(gulp.dest(assetsSrc + '/css')); */
+
+  // this uses gulp-sass
+  return gulp.src(assetsSrc + '/scss/main.scss')
+    .pipe(sass({ errLogToConsole: true,
+                 onError: browserSync.notify }))
+    .pipe(gulp.dest(buildDst + '/css'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(gulp.dest('css'));
 });
 
-// LiveReload for CSS
-gulp.task('css', function(){
-  var src = assetsSrc + '/css/**/*.css';
-
-  return gulp.src(src)
-    .pipe(plugins.changed(assetsSrc + '/css/**/*'))
-    .pipe(gulp.dest(assetsDst + '/css/'))
-    .pipe(plugins.size())
-    .pipe(plugins.connect.reload());
-});
-
-// watch files for changes, exclude node_modules
+// -----------------------------------------------------------------------------
+// Watch task
+// -----------------------------------------------------------------------------
 gulp.task('watch', function() {
-  gulp.watch(['./**/*.html'].concat(ignoredFolders), ['html']);
-  gulp.watch(['./**/*.md'].concat(ignoredFolders), ['markdown']);
   gulp.watch(assetsSrc + '/scss/**/*.scss', ['sass']);
-  gulp.watch(assetsSrc + '/css/**/*.css', ['css']);
-  gulp.watch(assetsSrc + '/js/**/.js', ['scripts']);
+  gulp.watch(paths.content, ['jekyll-rebuild']);
 });
 
-gulp.task('clean', function() {
-  return gulp.src('./_site/**/*', { read: false })
-    .pipe(plugins.clean());
-});
-
-gulp.task('deploy', ['jekyll'], function() {
-  return gulp.src('')
-    .pipe(plugins.exec("s3_website push"))
-    .pipe(plugins.exec.reporter());
-});
-
-// default task
-//gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
-gulp.task('default', function() {
-  runseq('clean',
-         ['jekyll', 'sass'],
-         ['css', 'scripts'],
-         function() {
-           return gulp.start('connect', 'watch');
+// -----------------------------------------------------------------------------
+// BrowserSync task
+// -----------------------------------------------------------------------------
+gulp.task('browserSync', ['sass', 'jekyll-build'], function() {
+  browserSync({
+    server: {
+      baseDir: "_site"
+    }
   });
 });
+
+// -----------------------------------------------------------------------------
+// Jekyll tasks
+// -----------------------------------------------------------------------------
+gulp.task('jekyll-build', function(done) {
+  browserSync.notify(messages.jekyllBuild);
+  return childProc.spawn('jekyll', ['build'], { stdio: 'inherit' })
+    .on('close', done);
+});
+
+gulp.task('jekyll', ['jekyll-build']);
+
+gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
+    browserSync.reload();
+});
+
+// -----------------------------------------------------------------------------
+// Build task
+// -----------------------------------------------------------------------------
+//gulp.task('build', function(cb) {
+//  return runSequence(['sass'],
+//    'jekyll-build',
+//    cb
+//  );
+//});
+
+// -----------------------------------------------------------------------------
+// Deploy task
+// -----------------------------------------------------------------------------
+gulp.task('deploy', function(cb) {
+  return runSequence(['sass'],
+    'jekyll-build',
+    's3',
+    cb
+  );
+});
+
+// -----------------------------------------------------------------------------
+// Publishing task
+// -----------------------------------------------------------------------------
+gulp.task('s3', function(cb) {
+  return childProc.exec('s3_website push', function(err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err); // finished task
+  });
+
+  //return childProc.spawn('s3_website', ['push'], { stdio: 'inherit' })
+  //  .on('close', done);
+});
+
+// -----------------------------------------------------------------------------
+// Default task
+// - Running just 'gulp' will compile the sass, run jekyll build,
+//   launch BrowserSync, and watch files.
+// -----------------------------------------------------------------------------
+gulp.task('default', ['browserSync', 'watch']);

@@ -1,12 +1,34 @@
 ---
-title: Home
+title: home
 layout: default
 ---
 
-<body id="home" class="site__home">
-  {% include header.html %}
-  <div class="site-wrap">
-    <p class="home__intro">Winter is coming.</p>
+<div class="container">
+  <div class="home-intro">
+    <div class="alfa">In the meantime, say <a href="mailto:hello@wikichen.is">hello</a> or <a href="http://twitter.com/wikichen">tweet</a>.</div>
   </div>
-  {% include scripts.html %}
-</body>
+
+  <ul class="list">
+    {% for post in site.posts %}
+    <li class="list-post">
+      <time class="post-date meta">{{ post.date | date: "%d %B %Y" }}</time>
+      <h2 class="list-post-title">
+        <a class="link-plain" href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+    <!-- get rid of these in future -->
+    <li class="list-post">
+      <time class="post-date meta">&infin;</time>
+      <h2 class="list-post-title">
+        <a class="link-plain" href="/designing-for-yerdle/">Designing for yerdle</a>
+      </h2>
+    </li>
+    <li class="list-post">
+      <time class="post-date meta">&infin;</time>
+      <h2 class="list-post-title">
+        <a class="link-plain" href="/cheese-bored/">Cheese Bored</a>
+      </h2>
+    </li>
+  </ul>
+</div>

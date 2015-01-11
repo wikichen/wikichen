@@ -1,16 +1,13 @@
 ---
-title: "Why I Dropped Out Of YC"
+layout: post
+title: "Why I dropped out of YC"
 subtitle: "When Hot Pants Get Uncomfortable"
 description: "A story about my first Moleskine and wearing hot pants."
+permalink: dropping-out-of-yc
 
 image_url: "/posts/2014/02/moleskin.jpg"
 image_alt: "Moleskin Squared Notebook"
 ---
-
-<figure>
-  <img src="{{ site.cdn_url }}{{ page.image_url }}" alt="{{ page.image_alt }}">
-  <figcaption>My second Moleskine notebook. &copy; 2014 Jonathan E. Chen</figcaption>
-</figure>
 
 I bought my first Moleskine by sheer coincidence while shopping for craft supplies that a design course had required; I had avoided buying a notebook for the first two years at university by resourcefully (for which some might argue was born out of necessity from the lazy frugality of your average college kid) removing stacks of printer paper from the student center under a well-rehearsed, convincing ruse that I was somehow heroically fixing a "paper jam".
 

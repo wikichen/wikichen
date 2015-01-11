@@ -1,0 +1,260 @@
+// -----------------------------------------------------------------------------
+// Reset
+// - loosely based on Meyer's reset (http://meyerweb.com/eric/tools/css/reset/)
+// - opinionated reset that doesn't care to support fringe/outdated browsers
+// -----------------------------------------------------------------------------
+
+/* use border-box layout model using better practice, read:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-pra
+   ctice/ */
+*, *:before, *:after {
+  box-sizing: inhert;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+
+$font-serif: chaparral-pro, Georgia, serif;
+$font-sans: freight-sans-pro, Helvetica Neue, Helvetica, sans-serif;
+$font-mono: Monaco, Courier, sans-serif;
+
+$font-family-base: $font-serif;
+$font-size-base: 1em;
+$font-weight-base: 400;
+$line-height-base: 1.5;
+
+$background-color: #fefefe;
+$text-color: #424242;
+$highlight-color: #f7564b;
+
+
+
+// -----------------------------------------------------------------------------
+// Base
+// -----------------------------------------------------------------------------
+
+html {
+  /* optimize font rendering */
+  //-webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+
+  /* set base font size to 16px * 1.25 = 20px */
+  font-size: 125%;
+}
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+  font: $font-weight-base $font-size-base $font-family-base;
+  line-height: $line-height-base;
+}
+
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6,
+.alfa, .bravo, .charlie, .delta, .echo, .foxtrot {
+  margin-bottom: 1.5rem;
+  color: #131313;
+  font-family: $font-sans;
+  font-weight: 700;
+}
+
+h1, .alfa {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+h2, .bravo {
+  font-size: 1.6rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+}
+
+h3, .charlie {
+  font-size: 2rem;
+}
+
+h4, .delta {
+
+}
+
+h5, .echo {
+
+}
+
+h6, .foxtrot {
+
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a, a:visited {
+  color: inherit;
+
+  &:hover {
+    color: $highlight-color;
+  }
+}
+
+.caps {
+  font-variant-caps: all-small-caps;
+  font-feature-settings: "c2sc", "smcp";
+      -moz-font-feature-settings: "c2sc", "smcp";
+      -ms-font-feature-settings: "c2sc", "smcp";
+      -webkit-font-feature-settings: "c2sc", "smcp";
+}
+
+.lfigs {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
+      -moz-font-feature-settings: "lnum";
+      -ms-font-feature-settings: "lnum";
+      -webkit-font-feature-settings: "lnum";
+}
+
+.meta {
+  color: #696969;
+  font-family: $font-sans;
+}
+
+.amp {
+  font-family: Baskerville, Palatino, "Book Antiqua", serif;
+  font-style: italic;
+}
+
+hr {
+  margin: 0 auto 1.5rem;
+  border: 1px solid #aaa;
+  max-width: 60px;
+}
+
+
+%code-base {
+  font-family: $font-mono;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+}
+
+code {
+  @extend %code-base;
+  display: inline;
+  max-width: 100%;
+  padding: 0 5px;
+  overflow: auto;
+  font-size: 0.75rem;
+}
+
+pre {
+  @extend %code-base;
+  padding: .3em .6em;
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+
+  code {
+    padding: 0;
+    border: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------------------
+
+.site-header {
+  color: #777;
+  background-color: #eee;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid rgba(0,0,0,.02);
+}
+
+.site-intro {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+// -----------------------------------------------------------------------------
+// Post
+// -----------------------------------------------------------------------------
+
+.post-date {
+  @extend .lfigs;
+
+}
+
+.post-title {
+  margin-bottom: 1rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  border-bottom: 5px solid #131313;
+}
+
+.post-content {
+
+}
+
+.list-post {
+  margin-bottom: 2rem;
+}
+
+// -----------------------------------------------------------------------------
+// Home
+// -----------------------------------------------------------------------------
+.home-intro {
+  margin-bottom: 4rem;
+}
+
+// -----------------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------------
+
+.link-plain {
+  text-decoration: none;
+}
+
+.u-center {
+  margin: 0 auto;
+}
