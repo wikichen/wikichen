@@ -51,15 +51,15 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 112.5%; }
+  font-size: 125%; }
 
 body {
   color: #424242;
   background-color: #fefefe;
   font: 400 1em minion-pro, Georgia, serif;
-  line-height: 1.5; }
+  line-height: 1.4; }
 
-h1, h2, h3, h4, h5, h6, .alfa, .bravo, .charlie, .delta, .echo, .foxtrot {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   color: #131313;
   font-family: minion-pro-display, minion-pro, Georgia, serif;
@@ -79,7 +79,9 @@ h3, .charlie {
   font-size: 2rem; }
 
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  word-break: break-word; }
 
 a, a:visited {
   color: inherit; }
@@ -156,7 +158,10 @@ pre {
   margin-bottom: 2rem; }
 
 .home-intro {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  color: #131313;
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
+  font-weight: 700; }
 
 .link-plain {
   text-decoration: none; }

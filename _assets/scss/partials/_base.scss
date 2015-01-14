@@ -53,7 +53,7 @@ $font-display: minion-pro-display, minion-pro, Georgia, serif;
 $font-family-base: $font-serif;
 $font-size-base: 1em;
 $font-weight-base: 400;
-$line-height-base: 1.5;
+$line-height-base: 1.4;
 
 $background-color: #fefefe;
 $text-color: #424242;
@@ -77,7 +77,7 @@ html {
       -webkit-font-variant-ligatures: common-ligatures;
 
   /* set base font size to 18px */
-  font-size: 112.5%;
+  font-size: 125%;
 }
 
 body {
@@ -92,8 +92,7 @@ body {
 // Typography
 // -----------------------------------------------------------------------------
 
-h1, h2, h3, h4, h5, h6,
-.alfa, .bravo, .charlie, .delta, .echo, .foxtrot {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   color: #131313;
   font-family: $font-display;
@@ -130,6 +129,8 @@ h6, .foxtrot {
 
 p {
   margin-bottom: 1.5rem;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 a, a:visited {
@@ -249,6 +250,9 @@ pre {
 // -----------------------------------------------------------------------------
 .home-intro {
   margin-bottom: 4rem;
+  color: #131313;
+  font-family: $font-sans;
+  font-weight: 700;
 }
 
 // -----------------------------------------------------------------------------
