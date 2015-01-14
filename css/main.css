@@ -48,19 +48,21 @@ html {
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  /* set base font size to 16px * 1.25 = 20px */
-  font-size: 125%; }
+  font-variant-ligatures: common-ligatures;
+  -webkit-font-variant-ligatures: common-ligatures;
+  /* set base font size to 18px */
+  font-size: 112.5%; }
 
 body {
   color: #424242;
   background-color: #fefefe;
-  font: 400 1em chaparral-pro, Georgia, serif;
+  font: 400 1em minion-pro, Georgia, serif;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6, .alfa, .bravo, .charlie, .delta, .echo, .foxtrot {
   margin-bottom: 1.5rem;
   color: #131313;
-  font-family: freight-sans-pro, Helvetica Neue, Helvetica, sans-serif;
+  font-family: minion-pro-display, minion-pro, Georgia, serif;
   font-weight: 700; }
 
 h1, .alfa {
@@ -100,7 +102,7 @@ a, a:visited {
 
 .meta {
   color: #696969;
-  font-family: freight-sans-pro, Helvetica Neue, Helvetica, sans-serif; }
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
 
 .amp {
   font-family: Baskerville, Palatino, "Book Antiqua", serif;

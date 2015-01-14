@@ -45,9 +45,10 @@ img {
 // Variables
 // -----------------------------------------------------------------------------
 
-$font-serif: chaparral-pro, Georgia, serif;
-$font-sans: freight-sans-pro, Helvetica Neue, Helvetica, sans-serif;
+$font-serif: minion-pro, Georgia, serif;
+$font-sans: franklin-gothic-urw, Helvetica, Arial, sans-serif;
 $font-mono: Monaco, Courier, sans-serif;
+$font-display: minion-pro-display, minion-pro, Georgia, serif;
 
 $font-family-base: $font-serif;
 $font-size-base: 1em;
@@ -72,8 +73,11 @@ html {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
 
-  /* set base font size to 16px * 1.25 = 20px */
-  font-size: 125%;
+  font-variant-ligatures: common-ligatures;
+      -webkit-font-variant-ligatures: common-ligatures;
+
+  /* set base font size to 18px */
+  font-size: 112.5%;
 }
 
 body {
@@ -92,7 +96,7 @@ h1, h2, h3, h4, h5, h6,
 .alfa, .bravo, .charlie, .delta, .echo, .foxtrot {
   margin-bottom: 1.5rem;
   color: #131313;
-  font-family: $font-sans;
+  font-family: $font-display;
   font-weight: 700;
 }
 
