@@ -51,13 +51,13 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 100%; }
-  @media (min-width: 720px) {
+  font-size: 112.5%; }
+  @media (min-width: 768px) {
     html {
-      font-size: 125%; } }
-  @media (min-width: 940px) {
+      font-size: 122.22222%; } }
+  @media (min-width: 1000px) {
     html {
-      font-size: 137.5%; } }
+      font-size: 133.33333%; } }
 
 body {
   color: #424242;

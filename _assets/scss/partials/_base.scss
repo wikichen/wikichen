@@ -77,14 +77,14 @@ html {
       -webkit-font-variant-ligatures: common-ligatures;
 
   /* set base font size to 18px */
-  font-size: 100%;
+  font-size: 112.5%;
 
-  @media (min-width: 720px) {
-    font-size: 125%;
+  @media (min-width: 768px) {
+    font-size: 122.2222222222%;
   }
 
-  @media (min-width: 940px) {
-    font-size: 137.5%;
+  @media (min-width: 1000px) {
+    font-size: 133.3333333333%;
   }
 }
 
