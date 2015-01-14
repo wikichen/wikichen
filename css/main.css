@@ -51,18 +51,21 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 125%; }
+  font-size: 100%; }
+  @media (min-width: 720px) {
+    html {
+      font-size: 125%; } }
 
 body {
   color: #424242;
   background-color: #fefefe;
   font: 400 1em minion-pro, Georgia, serif;
-  line-height: 1.4; }
+  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   color: #131313;
-  font-family: minion-pro-display, minion-pro, Georgia, serif;
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 h1, .alfa {
@@ -152,7 +155,7 @@ pre {
 
 .post-header {
   margin-bottom: 2rem;
-  border-bottom: 5px solid #131313; }
+  border-bottom: 4px solid #131313; }
 
 .list-post {
   margin-bottom: 2rem; }
