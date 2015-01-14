@@ -45,15 +45,15 @@ img {
 // Variables
 // -----------------------------------------------------------------------------
 
-$font-serif: minion-pro, Georgia, serif;
+$font-serif: ff-meta-serif-web-pro, Georgia, serif;
 $font-sans: franklin-gothic-urw, Helvetica, Arial, sans-serif;
 $font-mono: Monaco, Courier, sans-serif;
-$font-display: minion-pro-display, minion-pro, Georgia, serif;
+$font-display: tablet-gothic-compressed, $font-sans;
 
 $font-family-base: $font-serif;
 $font-size-base: 1em;
 $font-weight-base: 400;
-$line-height-base: 1.5;
+$line-height-base: 1.6;
 
 $background-color: #fefefe;
 $text-color: #424242;
@@ -103,8 +103,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   color: #131313;
-  font-family: $font-sans;
-  font-weight: 700;
+  font-family: $font-display;
+  font-weight: 600;
 }
 
 h1, .alfa {
@@ -114,7 +114,7 @@ h1, .alfa {
 }
 
 h2, .bravo {
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: -0.02rem;
   line-height: 1.2;
 }
