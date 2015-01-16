@@ -51,25 +51,25 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 112.5%; }
+  font-size: 100%; }
   @media (min-width: 768px) {
     html {
-      font-size: 122.22222%; } }
+      font-size: 112.5%; } }
   @media (min-width: 1000px) {
     html {
-      font-size: 133.33333%; } }
+      font-size: 125%; } }
 
 body {
   color: #424242;
   background-color: #fefefe;
-  font: 400 1em ff-meta-serif-web-pro, Georgia, serif;
-  line-height: 1.6; }
+  font: 400 1em Georgia, serif;
+  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   color: #131313;
-  font-family: tablet-gothic-compressed, franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  font-weight: 600; }
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
+  font-weight: 700; }
 
 h1, .alfa {
   font-size: 2.5rem;
@@ -93,6 +93,9 @@ a, a:visited {
   color: inherit; }
   a:hover, a:visited:hover {
     color: #f7564b; }
+
+.sans {
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
 
 .caps {
   font-variant-caps: all-small-caps;
@@ -167,7 +170,7 @@ pre {
   margin-bottom: 4rem;
   color: #131313;
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .link-plain {
   text-decoration: none; }

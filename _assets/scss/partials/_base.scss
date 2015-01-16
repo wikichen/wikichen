@@ -45,15 +45,15 @@ img {
 // Variables
 // -----------------------------------------------------------------------------
 
-$font-serif: ff-meta-serif-web-pro, Georgia, serif;
+$font-serif: Georgia, serif;
 $font-sans: franklin-gothic-urw, Helvetica, Arial, sans-serif;
 $font-mono: Monaco, Courier, sans-serif;
-$font-display: tablet-gothic-compressed, $font-sans;
+$font-display: $font-sans;
 
 $font-family-base: $font-serif;
 $font-size-base: 1em;
 $font-weight-base: 400;
-$line-height-base: 1.6;
+$line-height-base: 1.5;
 
 $background-color: #fefefe;
 $text-color: #424242;
@@ -77,14 +77,14 @@ html {
       -webkit-font-variant-ligatures: common-ligatures;
 
   /* set base font size to 18px */
-  font-size: 112.5%;
+  font-size: 100%;
 
   @media (min-width: 768px) {
-    font-size: 122.2222222222%;
+    font-size: 112.5%;
   }
 
   @media (min-width: 1000px) {
-    font-size: 133.3333333333%;
+    font-size: 125%;
   }
 }
 
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   color: #131313;
   font-family: $font-display;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h1, .alfa {
@@ -147,6 +147,10 @@ a, a:visited {
   &:hover {
     color: $highlight-color;
   }
+}
+
+.sans {
+  font-family: $font-sans;
 }
 
 .caps {
@@ -260,7 +264,7 @@ pre {
   margin-bottom: 4rem;
   color: #131313;
   font-family: $font-sans;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 // -----------------------------------------------------------------------------
