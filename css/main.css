@@ -43,7 +43,6 @@ img {
 
 html {
   /* optimize font rendering */
-  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
@@ -51,19 +50,16 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 100%; }
+  font-size: 112.5%; }
   @media (min-width: 768px) {
-    html {
-      font-size: 112.5%; } }
-  @media (min-width: 1000px) {
     html {
       font-size: 125%; } }
 
 body {
-  color: #424242;
+  color: #242424;
   background-color: #fefefe;
   font: 400 1em Georgia, serif;
-  line-height: 1.5; }
+  line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
@@ -147,8 +143,9 @@ pre {
     border: none; }
 
 .site-header {
-  color: #777;
-  background-color: #eee;
+  -webkit-font-smoothing: antialiased;
+  color: #ddd;
+  background-color: #242424;
   margin-bottom: 4rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.02); }
 
