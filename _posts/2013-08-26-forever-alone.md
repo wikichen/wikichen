@@ -5,10 +5,12 @@ subtitle: "Why Loneliness Matters in the Social Age"
 description: "On the perils and prevalence of loneliness as a problem in our society."
 ---
 
+<!--
 <figure>
   <img src="{{ site.cdn_url }}/posts/2013/08/snow.jpg" alt="Snowpocalypse in Pittsburgh">
   <figcaption>Snowpocalypse at Carnegie Mellon University, Pittsburgh. &copy; 2010 Jonathan E. Chen</figcaption>
 </figure>
+-->
 
 > I got up and went over and looked out the window. I felt so lonesome, all of a sudden. I almost wished I was dead. Boy, did I feel rotten. I felt so damn lonesome. I just didn't want to hang around any more. It made me too sad and lonesome.
 >
@@ -25,8 +27,6 @@ None of it worked.
 To the extent that I sought out CAPS (our student psych and counseling service) for help, the platitudes they offered as advice (“Just put yourself out there!”) only served to confirm my suspicion that loneliness isn't a very visible problem. (After all, the cure for loneliness isn't exactly something that could be prescribed. “Have you considered transferring?” they finally suggested, after exhausting their list of thought-terminating clichés. I graduated early instead.)
 
 As prolonged loneliness took its toll, I became very unhappy—to put it lightly—and even in retrospect I have difficulty pinpointing a specific cause. It wasn't that I didn't know anyone or failed to make any friends, and it wasn't that I was *alone* more than I liked.[^def]
-
-[^def]: It should be noted that there is a clear distinction between feeling lonely, which is a subjective experience, and being solitary, which is simply a lack of contact with people. For the purpose of this discussion, I'm referring to the former and the former only.
 
 Sure, I could point my finger at the abysmally fickle weather patterns of Pittsburgh, or the pseudo-suburban bubble that envelops the campus. There might even be a correlation between my academic dissonance with computer science and my feelings of loneliness. I might also just be an extremely unlikable person.
 
@@ -165,3 +165,7 @@ In the year that followed, I started a fraternity with some of the best kids I'd
 * [How do you cope with being lonely?](http://www.reddit.com/r/AskReddit/comments/1nwcod/how_do_you_cope_with_being_lonely/)
 * [The Science of Loneliness: How Isolation Can Kill You](http://www.newrepublic.com/article/113176/science-loneliness-how-isolation-can-kill-you)
 * [Hacker News discussion on this post](https://news.ycombinator.com/item?id=7244614)
+
+## Footnotes
+
+[^def]: It should be noted that there is a clear distinction between feeling lonely, which is a subjective experience, and being solitary, which is simply a lack of contact with people. For the purpose of this discussion, I'm referring to the former and the former only.
