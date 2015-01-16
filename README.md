@@ -1,4 +1,4 @@
-The Humble Wasteland of a Web Tinkerer
+W I K I C H E N
 ======================================
 
-One of these days I'll do a write-up, and maybe it'll help someone then.
+*WIKICHEN* is a collection of stories about a designer named Jonathan E. Chen.
