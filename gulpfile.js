@@ -23,7 +23,9 @@ var paths = {
     '_layouts/*.html',
     '_includes/*.html',
     '_posts/*',
-    '_serving/*'
+    '_serving/*',
+    'remembering/index.html',
+    '_moments/*'
   ]
 };
 

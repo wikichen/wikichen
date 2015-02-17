@@ -228,8 +228,8 @@ pre {
 .site-header {
   -webkit-font-smoothing: antialiased;
   color: #ddd;
-  background-color: #242424;
-  margin-bottom: 4rem;
+  background-color: #151515;
+  margin-bottom: 2rem;
   border-bottom: 2px solid rgba(0,0,0,.02);
 }
 
@@ -294,4 +294,47 @@ pre {
 
 .u-center {
   margin: 0 auto;
+}
+
+// -----------------------------------------------------------------------------
+// Moments
+// -----------------------------------------------------------------------------
+
+.moments {
+  color: #fff;
+  background-color: #151515;
+  font-family: $font-sans;
+  font-size: 72.2222222222%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.moments-intro {
+  margin-bottom: 2em;
+  font-family: $font-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.moment p {
+  line-height: 1.4;
+}
+
+.moment-box {
+  margin-bottom: 2em;
+  overflow: auto;
+}
+
+.moment-location, .moment-date {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.moment-location {
+  margin-bottom: 0;
+}
+
+.moment-date {
+  margin-bottom: 1em;
 }

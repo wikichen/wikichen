@@ -19,3 +19,8 @@ exclude: ['Gemfile',
           's3_website.yml',
           'README.md',
           'LICENSE']
+
+collections:
+  moments:
+    output: true
+    permalink: /remembering/:name/
