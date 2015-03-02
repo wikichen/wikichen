@@ -45,7 +45,7 @@ img {
 // Variables
 // -----------------------------------------------------------------------------
 
-$font-serif: Georgia, serif;
+$font-serif: leitura-news, Georgia, serif;
 $font-sans: franklin-gothic-urw, Helvetica, Arial, sans-serif;
 $font-mono: Monaco, Courier, sans-serif;
 $font-display: $font-sans;
@@ -58,7 +58,8 @@ $line-height-base: 1.6;
 $background-color: #fefefe;
 $text-color: #242424;
 $highlight-color: #f7564b;
-
+$white: #fff;
+$black: #000;
 
 
 // -----------------------------------------------------------------------------
@@ -67,20 +68,20 @@ $highlight-color: #f7564b;
 
 html {
   /* optimize font rendering */
-  //-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
 
-  font-variant-ligatures: common-ligatures;
-      -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  -webkit-font-variant-ligatures: common-ligatures;
 
   /* set base font size to 18px */
-  font-size: 112.5%;
+  font-size: 100%;
 
   @media (min-width: 768px) {
-    font-size: 125%;
+    font-size: 112.5%;
   }
 }
 
@@ -89,6 +90,19 @@ body {
   background-color: $background-color;
   font: $font-weight-base $font-size-base $font-family-base;
   line-height: $line-height-base;
+
+  &.inverted {
+    color: $white;
+    background-color: $black;
+    font-family: $font-sans;
+  }
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 
@@ -100,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   color: #131313;
   font-family: $font-display;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h1, .alfa {
@@ -139,6 +153,7 @@ p {
 
 a, a:visited {
   color: inherit;
+  text-decoration: none;
 
   &:hover {
     color: $highlight-color;
@@ -226,11 +241,9 @@ pre {
 // -----------------------------------------------------------------------------
 
 .site-header {
-  -webkit-font-smoothing: antialiased;
-  color: #ddd;
-  background-color: #151515;
   margin-bottom: 2rem;
-  border-bottom: 2px solid rgba(0,0,0,.02);
+  color: #ddd;
+  font-family: $font-sans;
 }
 
 .site-intro {
@@ -292,7 +305,11 @@ pre {
   text-decoration: none;
 }
 
-.u-center {
+.link-underline {
+  text-decoration: underline;
+}
+
+.center {
   margin: 0 auto;
 }
 
@@ -300,23 +317,8 @@ pre {
 // Moments
 // -----------------------------------------------------------------------------
 
-.moments {
-  color: #fff;
-  background-color: #151515;
-  font-family: $font-sans;
-  font-size: 72.2222222222%;
-  -webkit-font-smoothing: antialiased;
-}
-
-.moments-intro {
-  margin-bottom: 2em;
-  font-family: $font-serif;
-  font-size: 1.2rem;
-  font-style: italic;
-}
-
 .moment p {
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .moment-box {
@@ -324,9 +326,13 @@ pre {
   overflow: auto;
 }
 
+.moment-caption {
+  margin-top: 1em;
+  max-width: 450px;
+}
+
 .moment-location, .moment-date {
   color: #fff;
-  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -337,4 +343,9 @@ pre {
 
 .moment-date {
   margin-bottom: 1em;
+}
+
+.portrait {
+  max-width: 580px;
+  margin: 0 auto;
 }

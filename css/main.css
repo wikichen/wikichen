@@ -43,6 +43,7 @@ img {
 
 html {
   /* optimize font rendering */
+  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
@@ -50,22 +51,32 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 112.5%; }
+  font-size: 100%; }
   @media (min-width: 768px) {
     html {
-      font-size: 125%; } }
+      font-size: 112.5%; } }
 
 body {
   color: #242424;
   background-color: #fefefe;
-  font: 400 1em Georgia, serif;
+  font: 400 1em leitura-news, Georgia, serif;
   line-height: 1.6; }
+  body.inverted {
+    color: #fff;
+    background-color: #000;
+    font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
+
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   color: #131313;
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  font-weight: 700; }
+  font-weight: 600; }
 
 h1, .alfa {
   font-size: 2.5rem;
@@ -86,7 +97,8 @@ p {
   word-break: break-word; }
 
 a, a:visited {
-  color: inherit; }
+  color: inherit;
+  text-decoration: none; }
   a:hover, a:visited:hover {
     color: #f7564b; }
 
@@ -150,11 +162,9 @@ pre {
     border: none; }
 
 .site-header {
-  -webkit-font-smoothing: antialiased;
-  color: #ddd;
-  background-color: #151515;
   margin-bottom: 2rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.02); }
+  color: #ddd;
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
 
 .site-intro {
   padding-top: 1rem;
@@ -186,32 +196,25 @@ pre {
 .link-plain {
   text-decoration: none; }
 
-.u-center {
+.link-underline {
+  text-decoration: underline; }
+
+.center {
   margin: 0 auto; }
 
-.moments {
-  color: #fff;
-  background-color: #151515;
-  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  font-size: 72.22222%;
-  -webkit-font-smoothing: antialiased; }
-
-.moments-intro {
-  margin-bottom: 2em;
-  font-family: Georgia, serif;
-  font-size: 1.2rem;
-  font-style: italic; }
-
 .moment p {
-  line-height: 1.4; }
+  line-height: 1.3; }
 
 .moment-box {
   margin-bottom: 2em;
   overflow: auto; }
 
+.moment-caption {
+  margin-top: 1em;
+  max-width: 450px; }
+
 .moment-location, .moment-date {
   color: #fff;
-  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase; }
 
@@ -220,6 +223,10 @@ pre {
 
 .moment-date {
   margin-bottom: 1em; }
+
+.portrait {
+  max-width: 580px;
+  margin: 0 auto; }
 
 /*---------------------------------------------------------------------------//
 

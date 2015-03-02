@@ -1,37 +1,20 @@
 ---
 title: home
 layout: default
+class: inverted
 ---
 
-<div class="container">
-  <div class="home-intro">
-    <div class="alfa">In the meantime, say <a href="mailto:hello@wikichen.is">hello</a> or <a href="http://twitter.com/wikichen">tweet</a>.
-    </div>
-    <div class="bravo">Or check out some <a href="/remembering/">photos</a>.
-    </div>
-  </div>
-
-  <ul class="list">
-    <!-- featured posts: get rid of these in future -->
-    <li class="list-post">
-      <time class="post-date meta">&infin;</time>
-      <h2 class="list-post-title">
-        <a class="link-plain" href="/designing-for-yerdle/">Designing for yerdle</a>
-      </h2>
-    </li>
-    <li class="list-post">
-      <time class="post-date meta">&infin;</time>
-      <h2 class="list-post-title">
-        <a class="link-plain" href="/cheese-bored/">Cheese Bored</a>
-      </h2>
-    </li>
-    {% for post in site.posts %}
-    <li class="list-post">
-      <time class="post-date meta">{{ post.date | date: "%d %b %Y" }}</time>
-      <h2 class="list-post-title">
-        <a class="link-plain" href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="box">
+  {% for moment in site.moments reversed %}
+  <section class="moment-box">
+    <figure class="moment {% if moment.orientation == "portrait" %}portrait{% endif %}">
+      <img src="/serving/moments/{{ moment.name }}.jpg" alt="{{ moment.name }}">
+      <figcaption class="moment-caption">
+        <p class="moment-location">{{ moment.location }}</p>
+        <p class="moment-date"><time>{{ moment.date }}</time></p>
+        {{ moment.content }}
+      </figcaption>
+    </figure>
+  </section>
+  {% endfor %}
 </div>

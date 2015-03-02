@@ -1,0 +1,30 @@
+---
+title: blog
+layout: default
+---
+
+<main class="container">
+  <ul class="list">
+    <!-- featured posts: get rid of these in future -->
+    <li class="list-post">
+      <time class="post-date meta">&infin;</time>
+      <h2 class="list-post-title">
+        <a class="link-plain" href="/designing-for-yerdle/">Designing for yerdle</a>
+      </h2>
+    </li>
+    <li class="list-post">
+      <time class="post-date meta">&infin;</time>
+      <h2 class="list-post-title">
+        <a class="link-plain" href="/cheese-bored/">Cheese Bored</a>
+      </h2>
+    </li>
+    {% for post in site.posts %}
+    <li class="list-post">
+      <time class="post-date meta">{{ post.date | date: "%d %b %Y" }}</time>
+      <h2 class="list-post-title">
+        <a class="link-plain" href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+</main>
