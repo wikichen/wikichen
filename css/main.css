@@ -51,15 +51,15 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 100%; }
+  font-size: 112.5%; }
   @media (min-width: 768px) {
     html {
-      font-size: 112.5%; } }
+      font-size: 125%; } }
 
 body {
   color: #242424;
   background-color: #fefefe;
-  font: 400 1em leitura-news, Georgia, serif;
+  font: 400 1em ff-spinoza-web-pro, Georgia, serif;
   line-height: 1.6; }
   body.inverted {
     color: #fff;
