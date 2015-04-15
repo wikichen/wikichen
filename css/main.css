@@ -59,7 +59,7 @@ html {
 body {
   color: #242424;
   background-color: #fefefe;
-  font: 500 1em ff-meta-serif-web-pro, Georgia, serif;
+  font: 400 1em calluna, Georgia, serif;
   line-height: 1.6; }
   body.inverted {
     color: #fff;
