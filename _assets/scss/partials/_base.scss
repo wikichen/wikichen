@@ -45,7 +45,7 @@ img {
 // Variables
 // -----------------------------------------------------------------------------
 
-$font-serif: ff-spinoza-web-pro, Georgia, serif;
+$font-serif: ff-meta-serif-web-pro, Georgia, serif;
 $font-sans: franklin-gothic-urw, Helvetica, Arial, sans-serif;
 $font-mono: Monaco, Courier, sans-serif;
 $font-display: $font-sans;
@@ -77,11 +77,11 @@ html {
           font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
 
-  /* set base font size to 18px */
-  font-size: 112.5%;
+  /* set base font size to 16px */
+  font-size: 100%;
 
   @media (min-width: 768px) {
-    font-size: 125%;
+    font-size: 112.5%;
   }
 }
 

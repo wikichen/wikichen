@@ -50,16 +50,16 @@ html {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
-  /* set base font size to 18px */
-  font-size: 112.5%; }
+  /* set base font size to 16px */
+  font-size: 100%; }
   @media (min-width: 768px) {
     html {
-      font-size: 125%; } }
+      font-size: 112.5%; } }
 
 body {
   color: #242424;
   background-color: #fefefe;
-  font: 400 1em ff-spinoza-web-pro, Georgia, serif;
+  font: 400 1em ff-meta-serif-web-pro, Georgia, serif;
   line-height: 1.6; }
   body.inverted {
     color: #fff;
