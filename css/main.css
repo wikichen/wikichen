@@ -16,7 +16,7 @@
    http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-pra
    ctice/ */
 *, *:before, *:after {
-  box-sizing: inhert; }
+  box-sizing: inherit; }
 
 html {
   box-sizing: border-box; }
@@ -59,7 +59,7 @@ html {
 body {
   color: #242424;
   background-color: #fefefe;
-  font: 400 1em calluna, Georgia, serif;
+  font: 300 1em skolar, Georgia, serif;
   line-height: 1.6; }
   body.inverted {
     color: #fff;
