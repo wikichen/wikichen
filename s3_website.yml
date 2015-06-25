@@ -6,7 +6,7 @@ exclude_from_upload:
   - .DS_Store
   - .env
 s3_reduced_redundancy: true
-cloudfront_distribution_id: E3LXQ6G07LUPUD
+cloudfront_distribution_id: <%= ENV['CF_DIST_ID'] %>
 cloudfront_distribution_config:
   default_cache_behavior:
     min_TTL: <%= 60 * 60 * 24 %>

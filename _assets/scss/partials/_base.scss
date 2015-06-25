@@ -48,18 +48,20 @@ img {
 $font-serif: skolar, Georgia, serif;
 $font-sans: franklin-gothic-urw, Helvetica, Arial, sans-serif;
 $font-mono: Monaco, Courier, sans-serif;
-$font-display: $font-sans;
+$font-display: $font-serif;
 
 $font-family-base: $font-serif;
 $font-size-base: 1em;
 $font-weight-base: 300;
-$line-height-base: 1.6;
+$line-height-base: 1.4;
 
 $background-color: #fefefe;
 $text-color: #242424;
-$highlight-color: #f7564b;
+$highlight-color: #ff5449;
 $white: #fff;
 $black: #000;
+$gray: #63636a;
+$gray-200: #ccc;
 
 
 // -----------------------------------------------------------------------------
@@ -77,11 +79,11 @@ html {
           font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
 
-  /* set base font size to 16px */
-  font-size: 100%;
+  /* set base font size to 18px */
+  font-size: 112.5%;
 
   @media (min-width: 768px) {
-    font-size: 112.5%;
+    font-size: 125%;
   }
 }
 
@@ -114,23 +116,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   color: #131313;
   font-family: $font-display;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h1, .alfa {
-  font-size: 2.5rem;
-  letter-spacing: -0.03rem;
+  font-size: 3rem;
+  font-weight: 500;
   line-height: 1.1;
 }
 
 h2, .bravo {
   font-size: 1.5rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 h3, .charlie {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 h4, .delta {
@@ -152,21 +153,24 @@ p {
 }
 
 a, a:visited {
+  border-bottom: 1px solid $highlight-color;
   color: inherit;
   text-decoration: none;
 
   &:hover {
-    color: $highlight-color;
+    background-color: lighten($black, 95);
   }
 }
 
 blockquote {
   padding-left: 1rem;
-  border-left: 3px solid $text-color;
+  border-left: 2px solid $text-color;
+  font-style: italic;
+}
 
-  p {
-    color: #636363;
-  }
+figcaption p {
+  font-family: $font-sans;
+  font-size: 0.8rem;
 }
 
 .sans {
@@ -181,14 +185,6 @@ blockquote {
       -webkit-font-feature-settings: "c2sc", "smcp";
 }
 
-.lfigs {
-  font-variant-numeric: lining-nums;
-  font-feature-settings: "lnum";
-      -moz-font-feature-settings: "lnum";
-      -ms-font-feature-settings: "lnum";
-      -webkit-font-feature-settings: "lnum";
-}
-
 .meta {
   color: #696969;
   font-family: $font-sans;
@@ -200,11 +196,11 @@ blockquote {
 }
 
 hr {
-  margin: 0 auto 1.5rem;
-  border: 1px solid #aaa;
-  max-width: 60px;
+  margin: 0 auto 2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eee;
 }
-
 
 %code-base {
   font-family: $font-mono;
@@ -236,37 +232,82 @@ pre {
   }
 }
 
+.section-header {
+  color: $text-color;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 // -----------------------------------------------------------------------------
 // Header
 // -----------------------------------------------------------------------------
 
 .site-header {
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
-  color: #ddd;
   font-family: $font-sans;
+  box-shadow: 0 0.5px 5px 0.5px rgba(0,0,0,.05);
 }
 
 .site-intro {
+  display: inline-block;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
+  margin-right: 2rem;
 }
+
+.site-subheader {
+
+}
+
+.site-subheader .site-nav-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  color: $gray-200;
+
+  a {
+    border: none;
+  }
+
+  a:hover {
+    background-color: inherit;
+    color: $highlight-color;
+  }
+
+  &.active {
+    color: $highlight-color;
+  }
+}
+
 
 // -----------------------------------------------------------------------------
 // Post
 // -----------------------------------------------------------------------------
 
 .post-date {
-  @extend .lfigs;
-
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .post-title {
   margin-bottom: 1rem;
 }
 
+.list-item-header {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 .post-header {
   margin-bottom: 2rem;
-  border-bottom: 4px solid #131313;
+  border-bottom: 2px solid #131313;
 }
 
 .post-content {
@@ -288,25 +329,12 @@ pre {
 }
 
 // -----------------------------------------------------------------------------
-// Home
-// -----------------------------------------------------------------------------
-.home-intro {
-  margin-bottom: 4rem;
-  color: #131313;
-  font-family: $font-sans;
-  font-weight: 600;
-}
-
-// -----------------------------------------------------------------------------
 // Utilities
 // -----------------------------------------------------------------------------
 
 .link-plain {
+  border-bottom: none;
   text-decoration: none;
-}
-
-.link-underline {
-  text-decoration: underline;
 }
 
 .center {
@@ -318,13 +346,16 @@ pre {
 // -----------------------------------------------------------------------------
 
 .moment {
-  font-weight: 400;
+  font-family: $font-sans;
   line-height: 1.3;
 }
 
 .moment-box {
   margin-bottom: 2em;
-  overflow: auto;
+}
+
+.moment-img {
+  max-height: 100vh;
 }
 
 .moment-caption {
@@ -333,9 +364,8 @@ pre {
 }
 
 .moment-location, .moment-date {
-  color: #fff;
-  font-weight: 600;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .moment-location {

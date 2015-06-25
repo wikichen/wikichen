@@ -12,6 +12,8 @@ description: "On the perils and prevalence of loneliness as a problem in our soc
 </figure>
 -->
 
+![Snowpocalypse at Carnegie Mellon University]({{ site.cdn_url }}/2013/08/snow.jpg)
+
 > I got up and went over and looked out the window. I felt so lonesome, all of a sudden. I almost wished I was dead. Boy, did I feel rotten. I felt so damn lonesome. I just didn't want to hang around any more. It made me too sad and lonesome.
 >
 > --- J.D. Salinger in *[Catcher in the Rye][catcher]*

@@ -1,17 +1,10 @@
 ---
-title: "Without Their Permission"
-subtitle: "A Rallying Cry for the 21st Century"
-book_title: "Without Their Permission"
-author: "Alexis Ohanian"
-
 layout: post
-date: "2013-12-07"
-image_url: /books/without-their-permission.jpg
-image_alt: "Without Their Permission by Alexis Ohanian"
-
-affiliate_link: http://www.amazon.com/gp/product/1455520020/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1455520020&linkCode=as2&tag=wikichenis-20
-
-permalink: /reading/without-their-permission/
+title: Without Their Permission
+author: Alexis Ohanian
+cover: without-their-permission.jpg
+affiliate: http://www.amazon.com/gp/product/1455520020/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1455520020&linkCode=as2&tag=wikichenis-20
+date: 2013-12-07
 ---
 
 *Without Their Permission* is Alexis Ohanian's rallying cry for the 21st century, an age where the sociocultural monolith erected by the Internet has bestowed unprecedented independence and distribution&mdash;powers that were once the exclusive domain of traditional gatekeepers&mdash;upon individual content creators and opportunistic upstarts.
@@ -22,6 +15,6 @@ By nature of being the poster child for Silicon Valley in the public sphere, Oha
 
 The very message championed by Ohanian and his stories in *Without Their Permission*&mdash;that by embracing the open the Internet we stand to make the world suck less&mdash;is ultimately drowned out by an incoherent narrative that, nonetheless, reveals an endearingly optimistic voice that has come to embody the zeitgeist of a generation who grew up and found home on the web.
 
-<a class="button buy" href="{{ page.affiliate_link }}">
+<a class="button buy" href="{{ page.affiliate }}">
   Get the book
 </a>

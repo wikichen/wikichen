@@ -22,10 +22,13 @@ var paths = {
     'index.html',
     '_layouts/*.html',
     '_includes/*.html',
+    '_data/*',
     '_posts/*',
-    '_serving/*',
-    'remembering/index.html',
-    '_moments/*'
+    '_books/*',
+    'serving/*',
+    'capturing/*',
+    'reading/*',
+    'meta/*'
   ]
 };
 

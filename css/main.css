@@ -50,17 +50,17 @@ html {
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
-  /* set base font size to 16px */
-  font-size: 100%; }
+  /* set base font size to 18px */
+  font-size: 112.5%; }
   @media (min-width: 768px) {
     html {
-      font-size: 112.5%; } }
+      font-size: 125%; } }
 
 body {
   color: #242424;
   background-color: #fefefe;
   font: 300 1em skolar, Georgia, serif;
-  line-height: 1.6; }
+  line-height: 1.4; }
   body.inverted {
     color: #fff;
     background-color: #000;
@@ -75,21 +75,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   color: #131313;
-  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  font-weight: 600; }
+  font-family: skolar, Georgia, serif;
+  font-weight: 400; }
 
 h1, .alfa {
-  font-size: 2.5rem;
-  letter-spacing: -0.03rem;
+  font-size: 3rem;
+  font-weight: 500;
   line-height: 1.1; }
 
 h2, .bravo {
   font-size: 1.5rem;
-  letter-spacing: -0.02rem;
-  line-height: 1.2; }
+  line-height: 1.3; }
 
 h3, .charlie {
-  font-size: 2rem; }
+  font-size: 1.2rem; }
 
 p {
   margin-bottom: 1.5rem;
@@ -97,16 +96,20 @@ p {
   word-break: break-word; }
 
 a, a:visited {
+  border-bottom: 1px solid #ff5449;
   color: inherit;
   text-decoration: none; }
   a:hover, a:visited:hover {
-    color: #f7564b; }
+    background-color: #f2f2f2; }
 
 blockquote {
   padding-left: 1rem;
-  border-left: 3px solid #242424; }
-  blockquote p {
-    color: #636363; }
+  border-left: 2px solid #242424;
+  font-style: italic; }
+
+figcaption p {
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
+  font-size: 0.8rem; }
 
 .sans {
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
@@ -118,13 +121,6 @@ blockquote {
   -ms-font-feature-settings: "c2sc", "smcp";
   -webkit-font-feature-settings: "c2sc", "smcp"; }
 
-.lfigs, .post-date {
-  font-variant-numeric: lining-nums;
-  font-feature-settings: "lnum";
-  -moz-font-feature-settings: "lnum";
-  -ms-font-feature-settings: "lnum";
-  -webkit-font-feature-settings: "lnum"; }
-
 .meta {
   color: #696969;
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
@@ -134,9 +130,10 @@ blockquote {
   font-style: italic; }
 
 hr {
-  margin: 0 auto 1.5rem;
-  border: 1px solid #aaa;
-  max-width: 60px; }
+  margin: 0 auto 2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eee; }
 
 code, pre {
   font-family: Monaco, Courier, sans-serif;
@@ -161,21 +158,55 @@ pre {
     padding: 0;
     border: none; }
 
+.section-header {
+  color: #242424;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
 .site-header {
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
-  color: #ddd;
-  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
+  box-shadow: 0 0.5px 5px 0.5px rgba(0, 0, 0, 0.05); }
 
 .site-intro {
+  display: inline-block;
   padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: .5rem;
+  margin-right: 2rem; }
+
+.site-subheader .site-nav-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ccc; }
+  .site-subheader .site-nav-item a {
+    border: none; }
+  .site-subheader .site-nav-item a:hover {
+    background-color: inherit;
+    color: #ff5449; }
+  .site-subheader .site-nav-item.active {
+    color: #ff5449; }
+
+.post-date {
+  font-size: 0.8rem;
+  line-height: 1.4; }
 
 .post-title {
   margin-bottom: 1rem; }
 
+.list-item-header {
+  font-size: 1.5rem;
+  font-weight: 400; }
+
 .post-header {
   margin-bottom: 2rem;
-  border-bottom: 4px solid #131313; }
+  border-bottom: 2px solid #131313; }
 
 .post-content ul, .post-content ol {
   margin-bottom: 1rem; }
@@ -187,37 +218,30 @@ pre {
 .list-post {
   margin-bottom: 2rem; }
 
-.home-intro {
-  margin-bottom: 4rem;
-  color: #131313;
-  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  font-weight: 600; }
-
 .link-plain {
+  border-bottom: none;
   text-decoration: none; }
-
-.link-underline {
-  text-decoration: underline; }
 
 .center {
   margin: 0 auto; }
 
 .moment {
-  font-weight: 400;
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
   line-height: 1.3; }
 
 .moment-box {
-  margin-bottom: 2em;
-  overflow: auto; }
+  margin-bottom: 2em; }
+
+.moment-img {
+  max-height: 100vh; }
 
 .moment-caption {
   margin-top: 1em;
   max-width: 450px; }
 
 .moment-location, .moment-date {
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 500; }
 
 .moment-location {
   margin-bottom: 0; }

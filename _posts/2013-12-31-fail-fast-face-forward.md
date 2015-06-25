@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fail fast, face forward"
+title: "Fail Fast, Face Forward"
 subtitle: "2013 year-in-review"
 permalink: looking-back-on-2013
 ---

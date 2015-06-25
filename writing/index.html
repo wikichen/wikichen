@@ -1,27 +1,31 @@
 ---
-title: blog
+title: Writing
 layout: default
 ---
 
 <main class="container">
   <ul class="list">
-    <!-- featured posts: get rid of these in future -->
+    <p class="section-header">Featured Posts</p>
     <li class="list-post">
       <time class="post-date meta">&infin;</time>
-      <h2 class="list-post-title">
-        <a class="link-plain" href="/designing-for-yerdle/">Designing for yerdle</a>
+      <h2 class="list-item-header">
+        <a class="link-plain" href="/designing-for-yerdle/">Designing for Yerdle</a>
       </h2>
     </li>
     <li class="list-post">
       <time class="post-date meta">&infin;</time>
-      <h2 class="list-post-title">
+      <h2 class="list-item-header">
         <a class="link-plain" href="/cheese-bored/">Cheese Bored</a>
       </h2>
     </li>
+
+    <hr>
+
+    <p class="section-header">Recent Posts</p>
     {% for post in site.posts %}
     <li class="list-post">
-      <time class="post-date meta">{{ post.date | date: "%d %b %Y" }}</time>
-      <h2 class="list-post-title">
+      <time class="post-date meta">{{ post.date | date: "%B %d, %Y" }}</time>
+      <h2 class="list-item-header">
         <a class="link-plain" href="{{ post.url }}">{{ post.title }}</a>
       </h2>
     </li>

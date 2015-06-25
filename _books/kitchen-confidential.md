@@ -1,16 +1,10 @@
 ---
-title: "Kitchen Confidential"
-subtitle: "You Only Go Around Once"
-author: "Anthony Bourdain"
-
 layout: post
-date: "2013-10-29"
-image_url: /books/kitchen-confidential.jpg
-image_alt: "Kitchen Confidential by Anthony Bourdain"
-
-affiliate_link: http://www.amazon.com/gp/product/0060899220/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0060899220&linkCode=as2&tag=wikichenis-20
-
-permalink: /reading/kitchen-confidential/
+title: Kitchen Confidential
+author: Anthony Bourdain
+cover: kitchen-confidential.jpg
+affiliate: http://www.amazon.com/gp/product/0060899220/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0060899220&linkCode=as2&tag=wikichenis-20
+date: 2013-10-29
 ---
 
 > Cooking is a craft, I like to think, and a good cook is a craftsman---not an artist.
@@ -41,6 +35,6 @@ Perhaps the most useful takeaways from the book are the handy eating and cooking
 * You should garnish your food, because it takes little effort and zero talent to make your ordinary-looking food look good.
 * Good food is most often simple food.
 
-<a class="button buy" href="{{ page.affiliate_link }}">
+<a class="button buy" href="{{ page.affiliate }}">
   Get the book
 </a>

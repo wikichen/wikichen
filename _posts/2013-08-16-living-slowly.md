@@ -2,7 +2,6 @@
 layout: post
 title: "Live Slowly"
 subtitle: "Zen and the Lost Art of Living"
-permalink: living-slowly
 
 image_url: /posts/2013/08/breakfast.jpg
 image_alt: "Breakfast in Tainan"

@@ -1,0 +1,22 @@
+---
+title: Photos
+layout: default
+class: inverted
+---
+
+<div class="box">
+  {% for highlight in site.data.highlights %}
+  <section class="moment-box">
+    <figure class="moment">
+      <img class="moment-img"
+           src="{{ site.cdn_url }}/photos/highlights/{{ highlight.slug }}.jpg"
+           alt="{{ highlight.name }}">
+      <figcaption class="moment-caption">
+        <p class="moment-location">{{ highlight.location }}</p>
+        <p class="moment-date"><time>{{ highlight.date }}</time></p>
+        {{ highlight.caption }}
+      </figcaption>
+    </figure>
+  </section>
+  {% endfor %}
+</div>

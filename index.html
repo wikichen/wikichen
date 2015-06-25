@@ -1,20 +1,16 @@
 ---
-title: home
+title: Jonathan E. Chen
 layout: default
-class: inverted
 ---
 
-<div class="box">
-  {% for moment in site.moments reversed %}
-  <section class="moment-box">
-    <figure class="moment {% if moment.orientation == "portrait" %}portrait{% endif %}">
-      <img src="/serving/moments/{{ moment.name }}.jpg" alt="{{ moment.name }}">
-      <figcaption class="moment-caption">
-        <p class="moment-location">{{ moment.location }}</p>
-        <p class="moment-date"><time>{{ moment.date }}</time></p>
-        {{ moment.content }}
-      </figcaption>
-    </figure>
-  </section>
-  {% endfor %}
-</div>
+<main class="container">
+  <h3>I'm a product designer living in San Francisco, currently working at <a href="https://www.zumper.com/">Zumper</a>.</h3>
+
+  <figure>
+    <img src="{{ site.cdn_url }}/photos/benu.jpg"
+         alt="Benu Kitchen">
+    <figcaption>
+      <p>Just as the kitchen staff at Benu is hard at work, I'm also cooking up something new. A sort of mise en place, if you will.</p>
+    </figcaption>
+  </figure>
+</main>

@@ -1,0 +1,18 @@
+---
+title: Library
+layout: default
+---
+
+<main class="container">
+  <ul class="list">
+    <p class="section-header">Library</p>
+    {% assign books = site.books | sort: 'date' | reverse %}
+    {% for book in books %}
+    <li class="list-post">
+      <h2 class="list-item-header">
+        &mdash;<a class="link-plain" href="{{ book.url }}">{{ book.title }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+</main>

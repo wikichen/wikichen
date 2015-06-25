@@ -7,10 +7,12 @@ author:
 
 markdown: kramdown
 highlighter: rouge
-
 permalink: /:title/
 
-enable_disqus: false
+collections:
+  books:
+    output: true
+    permalink: /reading/:title/
 
 exclude: ['Gemfile',
           'gulpfile.js',
@@ -20,7 +22,4 @@ exclude: ['Gemfile',
           'README.md',
           'LICENSE']
 
-collections:
-  moments:
-    output: true
-    permalink: /remembering/:name/
+cdn_url: //cloud.wikichen.is/serving

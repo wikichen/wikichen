@@ -1,18 +1,10 @@
 ---
-title: "Zen and the Art of Motorcycle Maintenance"
-subtitle: "A Journey of Journeys"
-book_title: "Zen and the Art of Motorcycle Maintenance"
-author: "Robert Pirsig"
-description: "Takeaways from the book that's not about motorcycles."
-
 layout: post
-date: "2014-03-13"
-image_url: /books/zen-and-the-art-of-motorcycle-maintenance.jpg
-image_alt: "Zen and the Art of Motorcycle Maintenance by Robert Pirsig"
-
-affiliate_link: http://cadence.cc/
-
-permalink: /reading/zen-and-the-art-of-motorcycle-maintenance/
+title: Zen and the Art of Motorcycle Maintenance
+author: Robert Pirsig
+cover: zen-and-the-art-of-motorcycle-maintenance.jpg
+affiliate: http://amzn.to/1SLwpF0
+date: 2014-03-13
 ---
 
 As others none the wiser have echoed before me, *Zen and the Art of Motorcycle Maintenance* by Robert Pirsig is not a book about motorcycles. But to say that it's not would also be a faulty assessment. It's a premise based on the essence of motorcycle maintenance, using the motorcycle as a vehicle for both the journey of a dad and his son across America and the journey Pirsig himself takes you through, one of philosophy and life. It's a book so profoundly beautiful and frustrating and pedantic and didactic all at the same time that it accomplishes what good books are intended to do---to make you think.
