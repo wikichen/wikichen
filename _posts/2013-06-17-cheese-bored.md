@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Cheese Bored</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="main.css" />
+---
+layout: default
+title: Cheese Bored
+head: |
+  <link rel="stylesheet" href="/css/cheese_bored.css" />
   <script type="text/javascript" src="//use.typekit.net/hqs6gvw.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <!-- put TWITTER CARD stuff here -->
-  <script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-44627995-1', 'wikichen.is');
-  ga('send', 'pageview');
-</script>
+featured: true
+---
 
-</head>
 <body>
   <div class="fluid-container">
     <div class="post-header">
@@ -36,7 +26,7 @@
 
   <div class="container">
     <div class="post-content">
-      <div class="row">
+      <div class="row-fluid">
         <div class="span10 offset1">
           <p class="post-intro">
             With a 4.5-star rating aggregated over 2,700 reviews on Yelp as of this writing, Cheese Board Pizza stands as one of the most overhyped places recommended by almost anyone who has ever set foot in Berkeley, California. As a self-proclaimed pizza aficionado, I decided to find out whether the hype is justified—and took it one step further by trying a different pizza everyday for an entire week.
@@ -86,7 +76,7 @@
                 <p>Tuesday 6/11</p>
                 <h1>Roma tomatoes, onions, mozzarella and feta cheese, lemon zest, lemon juice, cilantro.</h1>
               </div>
-              <img src="assets/pizza1.jpg" alt="Pizza 1" />
+              <img src="{{ site.cdn_url }}/stories/cheese-board-pizza/pizza1.jpg" alt="Pizza 1" />
             </div>
           </div>
         </div>
@@ -121,7 +111,7 @@
                 <p>Wednesday 6/12</p>
                 <h1>Fresh California corn, red bell pepper, onions, mozzarella and feta cheese, garlic olive oil, cilantro, key limes.</h1>
               </div>
-              <img src="assets/pizza2.jpg" alt="Pizza 2" />
+              <img src="{{ site.cdn_url }}/stories/cheese-board-pizza/pizza2.jpg" alt="Pizza 2" />
             </div>
           </div>
         </div>
@@ -158,7 +148,7 @@
                 <p>Thursday 6/13</p>
                 <h1>Fresh zucchini, onions, mozzarella and feta cheese, basil pesto (with pinenuts).</h1>
               </div>
-              <img src="assets/pizza3.jpg" alt="Pizza 3" />
+              <img src="{{ site.cdn_url }}/stories/cheese-board-pizza/pizza3.jpg" alt="Pizza 3" />
             </div>
           </div>
         </div>
@@ -193,7 +183,7 @@
                 <p>Friday 6/14</p>
                 <h1>Cremini mushrooms, green bell pepper, onions, mozzarella and feta cheese, garlic olive oil, Italian parsley.</h1>
               </div>
-              <img src="assets/pizza4.jpg" alt="Pizza 4" />
+              <img src="{{ site.cdn_url }}/stories/cheese-board-pizza/pizza4.jpg" alt="Pizza 4" />
             </div>
           </div>
         </div>
@@ -228,7 +218,7 @@
                 <p>Saturday 6/15</p>
                 <h1>Fresh California corn, Roma tomatoes, onions, mozzarella and parmesan cheese, garlic olive oil, basil.</h1>
               </div>
-              <img src="assets/pizza5.jpg" alt="Pizza 5" />
+              <img src="{{ site.cdn_url }}/stories/cheese-board-pizza/pizza5.jpg" alt="Pizza 5" />
             </div>
           </div>
         </div>
@@ -253,7 +243,7 @@
           </div>
         </div>
         <div class="span5">
-          <img src="assets/band.jpg" alt="Live Band Sketch" />
+          <img src="{{ site.cdn_url }}/stories/cheese-board-pizza/band.jpg" alt="Live Band Sketch" />
         </div>
       </div>
 
@@ -265,10 +255,8 @@
         </div>
       </div>
 
-      <div class="footer">
-      </div>
+    </div>
+    <div class="footer">
     </div>
   </div>
 </body>
-
-</html>
