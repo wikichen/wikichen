@@ -28,7 +28,9 @@ var paths = {
     'serving/*',
     'capturing/*',
     'reading/*',
-    'meta/*'
+    'writing/*',
+    'meta/*',
+    'css/*'
   ]
 };
 

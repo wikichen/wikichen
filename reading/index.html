@@ -3,7 +3,8 @@ title: Library
 layout: default
 ---
 
-<main class="container">
+<div class="container">
+  <main class="content">
   <ul class="list">
     <p class="section-header">Library</p>
     {% assign books = site.books | sort: 'date' | reverse %}
@@ -15,4 +16,5 @@ layout: default
     </li>
     {% endfor %}
   </ul>
-</main>
+  </main>
+</div>

@@ -3,17 +3,20 @@ title: Writing
 layout: default
 ---
 
-<main class="container">
+<div class="container">
+  <main class="content">
   <ul class="list">
     <p class="section-header">Featured Posts</p>
+    {% for post in site.posts %}
+    {% if post.featured %}
     <li class="list-post">
-      <time class="post-date meta">&infin;</time>
       <h2 class="list-item-header">
-        <a class="link-plain" href="/designing-for-yerdle/">Designing for Yerdle</a>
+        <a class="link-plain" href="{{ post.url }}">{{ post.title }}</a>
       </h2>
     </li>
+    {% endif %}
+    {% endfor %}
     <li class="list-post">
-      <time class="post-date meta">&infin;</time>
       <h2 class="list-item-header">
         <a class="link-plain" href="/cheese-bored/">Cheese Bored</a>
       </h2>
@@ -23,12 +26,15 @@ layout: default
 
     <p class="section-header">Recent Posts</p>
     {% for post in site.posts %}
+    {% unless post.featured %}
     <li class="list-post">
       <time class="post-date meta">{{ post.date | date: "%B %d, %Y" }}</time>
       <h2 class="list-item-header">
         <a class="link-plain" href="{{ post.url }}">{{ post.title }}</a>
       </h2>
     </li>
+    {% endunless %}
     {% endfor %}
   </ul>
-</main>
+  </main>
+</div>

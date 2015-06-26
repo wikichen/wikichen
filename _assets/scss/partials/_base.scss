@@ -114,7 +114,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
-  color: #131313;
   font-family: $font-display;
   font-weight: 400;
 }
@@ -246,7 +245,6 @@ pre {
 
 .site-header {
   padding-bottom: 1rem;
-  margin-bottom: 2rem;
   font-family: $font-sans;
   box-shadow: 0 0.5px 5px 0.5px rgba(0,0,0,.05);
 }
@@ -286,6 +284,12 @@ pre {
   }
 }
 
+// -----------------------------------------------------------------------------
+// Layout
+// -----------------------------------------------------------------------------
+.content {
+  padding-top: 2rem;
+}
 
 // -----------------------------------------------------------------------------
 // Post
