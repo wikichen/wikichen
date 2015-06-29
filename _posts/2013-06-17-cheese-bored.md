@@ -4,7 +4,6 @@ title: Cheese Bored
 head: |
   <link rel="stylesheet" href="/css/cheese_bored.css" />
   <script type="text/javascript" src="//use.typekit.net/hqs6gvw.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 featured: true
 ---
 

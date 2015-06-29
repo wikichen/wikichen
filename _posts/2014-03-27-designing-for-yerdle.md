@@ -3,8 +3,6 @@ layout: default
 title: Designing for Yerdle
 head: |
   <link rel="stylesheet" href="/css/yerdle.css">
-  <script type="text/javascript" src="//use.typekit.net/akj2oia.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 featured: true
 ---
 
