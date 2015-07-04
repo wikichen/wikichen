@@ -17,6 +17,11 @@
       {{ page.head }}
     {% endif %}
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    {% if page.style %}
+    <style>
+      {{ page.style }}
+    </style>
+    {% endif %}
     {% include tracking.html %}
   </head>
   <body {% if page.class %}class="{{ page.class }}"{% endif %}>
