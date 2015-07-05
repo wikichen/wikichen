@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Designing for Yerdle
+title: Designing Yerdle
 head: |
   <link rel="stylesheet" href="/css/yerdle.css">
 featured: true
