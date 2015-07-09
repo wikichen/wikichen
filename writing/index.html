@@ -21,7 +21,7 @@ layout: default
 
     <p class="section-header">Recent Posts</p>
     {% for post in site.posts %}
-    {% unless post.featured %}
+    {% unless post.featured or post.zumper or post.portfolio %}
     <li class="list-post">
       <time class="post-date meta">{{ post.date | date: "%B %d, %Y" }}</time>
       <h2 class="list-item-header">

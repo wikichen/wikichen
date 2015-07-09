@@ -3,12 +3,13 @@ layout: default
 title: Designing Yerdle
 head: |
   <link rel="stylesheet" href="/css/yerdle.css">
-featured: true
+cover: /work/yerdle-cover.png
+portfolio: true
 ---
 
 <div class="project-header__container">
   <section class="project-header">
-    <h1 class="project-title" id="project-title">Designing for Yerdle</h1>
+    <h1 class="project-title" id="project-title">{{ page.title }}</h1>
     <p class="project-byline">Published on May 27, 2014 by <a href="//wikichen.is">Jonathan E. Chen</a></p>
   </section>
 </div>

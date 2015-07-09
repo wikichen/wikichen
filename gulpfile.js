@@ -70,6 +70,9 @@ gulp.task('sass', function() {
   return gulp.src(assetsSrc + '/scss/main.scss')
     .pipe(sass({ errLogToConsole: true,
                  onError: browserSync.notify }))
+    .pipe($.autoprefixer({ browsers: ['last 2 versions'],
+                         cascade: false
+    }))
     .pipe(gulp.dest(buildDst + '/css'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(gulp.dest('css'));
