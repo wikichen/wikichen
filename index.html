@@ -1,48 +1,12 @@
 ---
 title: Jonathan E. Chen
 layout: default
-head: |
-  <meta name="robots" content="noindex">
 ---
 
 <div class="container">
   <main class="content">
 
-  <h3 class="proj-intro text">Currently designing at <a href="https://www.zumper.com/">Zumper</a> in San Francisco.</h3>
-
-  <p class="section-header proj-header">Designing Zumper</p>
-  <ul class="list box">
-    {% for post in site.posts reversed %}
-    {% if post.zumper %}
-    <li class="box-item">
-      <a href="{{ post.url }}">
-        <img class="box-cover" src="{{ site.cdn_url }}{{ post.cover }}">
-        <h2 class="box-header">{{ post.title }}</h2>
-      </a>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-
-  <hr>
-
-  <p class="section-header proj-header">Past Chapters</p>
-  <ul class="list box">
-    {% for post in site.posts %}
-    {% if post.portfolio %}
-    <li class="box-item">
-      {% if post.link %}
-      <a href="{{ post.link }}">
-      {% else %}
-      <a href="{{ post.url }}">
-      {% endif %}
-        <img class="box-cover" src="{{ site.cdn_url }}{{ post.cover }}">
-        <h2 class="box-header">{{ post.title }}</h2>
-      </a>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+  <h3 class="proj-intro text">Currently designing <a href="https://www.zumper.com/">Zumper</a> in San Francisco. Stay tuned for more...</h3>
 
   </main>
 </div>
