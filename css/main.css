@@ -61,7 +61,7 @@ html {
 body {
   color: #242424;
   background-color: #fefefe;
-  font: 300 1em skolar, Georgia, serif;
+  font: 300 1em franklin-gothic-urw, Helvetica, Arial, sans-serif;
   line-height: 1.4; }
   body.inverted {
     color: #fff;
@@ -76,7 +76,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
-  font-family: skolar, Georgia, serif;
+  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
 h1, .alfa {
@@ -107,8 +107,7 @@ a, a:visited {
 
 blockquote {
   padding-left: 1rem;
-  border-left: 2px solid #242424;
-  font-style: italic; }
+  border-left: 2px solid #242424; }
 
 figcaption p {
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
@@ -248,8 +247,7 @@ pre {
 
 .proj-intro {
   margin: 10px;
-  margin-bottom: 2rem;
-  font-style: italic; }
+  margin-bottom: 2rem; }
 
 .proj-header {
   padding: 10px;

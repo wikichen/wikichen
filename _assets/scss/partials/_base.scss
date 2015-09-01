@@ -48,9 +48,9 @@ img {
 $font-serif: skolar, Georgia, serif;
 $font-sans: franklin-gothic-urw, Helvetica, Arial, sans-serif;
 $font-mono: Monaco, Courier, sans-serif;
-$font-display: $font-serif;
+$font-display: $font-sans;
 
-$font-family-base: $font-serif;
+$font-family-base: $font-sans;
 $font-size-base: 1em;
 $font-weight-base: 300;
 $line-height-base: 1.4;
@@ -171,7 +171,6 @@ a, a:visited {
 blockquote {
   padding-left: 1rem;
   border-left: 2px solid $text-color;
-  font-style: italic;
 }
 
 figcaption p {
@@ -346,7 +345,6 @@ pre {
 .proj-intro {
   margin: 10px;
   margin-bottom: 2rem;
-  font-style: italic;
 }
 
 .proj-header {
