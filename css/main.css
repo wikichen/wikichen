@@ -53,10 +53,10 @@ html {
   font-variant-ligatures: common-ligatures;
   -webkit-font-variant-ligatures: common-ligatures;
   /* set base font size to 18px */
-  font-size: 112.5%; }
+  font-size: 100%; }
   @media (min-width: 768px) {
     html {
-      font-size: 125%; } }
+      font-size: 112.5%; } }
 
 body {
   color: #242424;
@@ -96,9 +96,9 @@ p {
   word-wrap: break-word;
   word-break: break-word; }
 
-.text-link, .text a {
+p a, .text-link {
   border-bottom: 1px solid #ff5449; }
-  .text-link:hover, .text a:hover {
+  p a:hover, .text-link:hover {
     background-color: #f2f2f2; }
 
 a, a:visited {
@@ -111,7 +111,8 @@ blockquote {
 
 figcaption p {
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  font-size: 0.8rem; }
+  font-size: 0.9rem;
+  color: #63636a; }
 
 .sans {
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif; }
@@ -168,30 +169,44 @@ pre {
   text-transform: uppercase; }
 
 .site-header {
-  padding-bottom: 1rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  box-shadow: 0 0.5px 5px 0.5px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 1px 5px 0.5px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  padding: 1rem;
+  line-height: 2rem; }
 
 .site-intro {
-  display: inline-block;
-  padding-top: 1rem;
-  padding-bottom: .5rem;
-  margin-right: 2rem; }
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
 
-.site-subheader .site-nav-item {
+.site-nav {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
+
+.site-nav .site-nav-item {
   display: inline-block;
   margin-right: 0.5rem;
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
   color: #ccc; }
-  .site-subheader .site-nav-item a {
+  .site-nav .site-nav-item a {
     border: none; }
-  .site-subheader .site-nav-item a:hover {
+  .site-nav .site-nav-item a:hover {
     background-color: inherit;
     color: #ff5449; }
-  .site-subheader .site-nav-item.active {
+  .site-nav .site-nav-item.active {
     color: #ff5449; }
 
 .content {
@@ -280,7 +295,7 @@ iframe {
   margin: 0 auto; }
 
 .post-date {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.4; }
 
 .post-title {

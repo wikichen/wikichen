@@ -4,7 +4,6 @@ title: "Why I Dropped Out of Y Combinator"
 subtitle: "When Hot Pants Get Uncomfortable"
 description: "A story about my first Moleskine and wearing hot pants."
 cover: /work/yc-cover.jpg
-portfolio: true
 ---
 
 ![Moleskine Squared Notebook]({{ site.cdn_url }}/2014/02/moleskine.jpg)

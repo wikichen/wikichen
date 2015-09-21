@@ -12,16 +12,17 @@
     <link rel="apple-touch-icon-precomposed" href="/touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="//use.typekit.net/ggd0zlr.js"></script>
+    <script src="https://use.typekit.net/ggd0zlr.js"></script>
     {% if page.head %}
       {{ page.head }}
     {% endif %}
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    {% if page.style %}
     <style>
+      .wf-loading { visibility: hidden; }
+      {% if page.style %}
       {{ page.style }}
+      {% endif %}
     </style>
-    {% endif %}
     {% include tracking.html %}
   </head>
   <body {% if page.class %}class="{{ page.class }}"{% endif %}>

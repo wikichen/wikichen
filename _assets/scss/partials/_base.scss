@@ -80,10 +80,10 @@ html {
   -webkit-font-variant-ligatures: common-ligatures;
 
   /* set base font size to 18px */
-  font-size: 112.5%;
+  font-size: 100%;
 
   @media (min-width: 768px) {
-    font-size: 125%;
+    font-size: 112.5%;
   }
 }
 
@@ -151,16 +151,12 @@ p {
   word-break: break-word;
 }
 
-.text-link {
+p a, .text-link {
   border-bottom: 1px solid $highlight-color;
 
   &:hover {
     background-color: lighten($black, 95);
   }
-}
-
-.text a {
-  @extend .text-link;
 }
 
 a, a:visited {
@@ -175,7 +171,8 @@ blockquote {
 
 figcaption p {
   font-family: $font-sans;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: $gray;
 }
 
 .sans {
@@ -252,29 +249,28 @@ pre {
 // -----------------------------------------------------------------------------
 
 .site-header {
-  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: $font-sans;
-  box-shadow: 0 0.5px 5px 0.5px rgba(0,0,0,.05);
+  box-shadow: 0 1px 5px 0.5px rgba(0,0,0,.05);
+  margin: 0 auto;
+  padding: 1rem;
+  line-height: 2rem;
 }
 
 .site-intro {
-  display: inline-block;
-  padding-top: 1rem;
-  padding-bottom: .5rem;
-  margin-right: 2rem;
+  flex: 0 1 auto;
 }
 
-.site-subheader {
-
+.site-nav {
+  flex: 0 1 auto;
 }
 
-.site-subheader .site-nav-item {
+.site-nav .site-nav-item {
   display: inline-block;
   margin-right: 0.5rem;
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 
   color: $gray-200;
 
@@ -394,7 +390,7 @@ iframe {
 // -----------------------------------------------------------------------------
 
 .post-date {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 

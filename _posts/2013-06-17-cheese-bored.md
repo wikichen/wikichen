@@ -5,6 +5,7 @@ head: |
   <link rel="stylesheet" href="/css/cheese_bored.css" />
   <script type="text/javascript" src="//use.typekit.net/hqs6gvw.js"></script>
 featured: true
+published: false
 ---
 
 <body>

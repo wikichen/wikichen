@@ -3,6 +3,7 @@ layout: project
 title: Designing Delta Upsilon
 cover: /work/du-cover.png
 portfolio: true
+published: false
 ---
 
 One of my earlier experiences in entrepreneurship and design was founding a fraternity at Carnegie Mellon.

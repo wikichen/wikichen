@@ -1,20 +1,12 @@
 <header class="site-header" role="banner">
+  <div class="site-intro">
+    <a class="text-link" href="/">WIKICHEN</span></a> is Jonathan E. Chen.
+  </div>
   <nav class="site-nav" role="navigation">
-    <div class="container">
-      <div class="site-intro">
-        <a class="text-link" href="/">WIKICHEN</span></a> is Jonathan E. Chen.
-      </div>
-      <div class="site-subheader">
-        <nav>
-          <ul>
-            <li class="site-nav-item {% if page.url == '/index.html' %}active{% endif %}"><a href="/">Work</a></li>
-            <li class="site-nav-item {% if page.url == '/writing/index.html' %}active{% endif %}"><a href="/writing/">Stories</a></li>
-            <li class="site-nav-item {% if page.url == '/capturing/index.html' %}active{% endif %}"><a href="/capturing/">Photos</a></li>
-            <li class="site-nav-item {% if page.url == '/reading/index.html' %}active{% endif %}"><a href="/reading/">Library</a></li>
-            <li class="site-nav-item {% if page.url == '/meta/index.html' %}active{% endif %}"><a href="/meta/">About</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    <ul>
+      <li class="site-nav-item {% if page.url == '/index.html' %}active{% endif %}"><a href="/">Home</a></li>
+      <li class="site-nav-item {% if page.url == '/writing/index.html' %}active{% endif %}"><a href="/writing/">Writing</a></li>
+      <li class="site-nav-item {% if page.url == '/capturing/index.html' %}active{% endif %}"><a href="/capturing/">Photos</a></li>
+    </ul>
   </nav>
 </header>
