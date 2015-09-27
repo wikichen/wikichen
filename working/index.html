@@ -14,7 +14,7 @@ head: |
   <ul class="list box">
     {% for post in site.posts reversed %}
     {% if post.zumper %}
-    <li class="box-item">
+    <li class="box-item" {% if post.hide %}style="visibility: hidden;"{% endif %}>
       <a href="{{ post.url }}">
         <img class="box-cover" src="{{ site.cdn_url }}{{ post.cover }}">
         <h2 class="box-header">{{ post.title }}</h2>

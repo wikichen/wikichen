@@ -25,7 +25,7 @@ Our hypothesis is that a better informed user would have longer engagement with 
 <img src="{{ site.cdn_url }}/work/z/data-2.png">
 {:/}  
 
-I spent a considerable amount of time tweaking every step of the onboarding flow so each screen would contain just the right amount of information and interaction. In the end, all the work I did with the mobile devs actually made things worse: dropoff rate increased, and people sent fewer messages and created fewer alerts. 
+I spent a considerable amount of time tweaking every step of the onboarding flow so each screen would contain just the right amount of information and interaction. In the end, all the work I did with the mobile devs actually made things worse: dropoff rate increased, and people sent fewer messages and created fewer alerts.
 
 In hindsight, we should've done a bit more qualitative testing to figure out exactly why users were dropping off---it might not have been something we could've solved, certainly not with a hardly rationalized onboarding barrier.
 
