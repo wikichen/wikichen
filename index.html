@@ -5,17 +5,17 @@ layout: default
 
 <div class="container">
   <main class="content">
-  <figure>
-    <img src="{{ site.cdn_url }}/photos/selfie.jpg"
-         alt="Jonathan E. Chen aka wikichen">
-    <figcaption>
-      <p>This is a picture of my face. There are a billion others just like it, and I'm okay with that.</p>
-    </figcaption>
-  </figure>
-  <p>My name is Jonathan E. Chen, and I go by wikichen on the web. I'm a product designer working at Zumper. <a href="https://twitter.com/wikichen">Say hello on Twitter</a>.</p>
-
-  <p class="section-header">Colophon</p>
-  <p>This site is powered by Jekyll, served from Amazon S3 and distributed by CloudFront. Set in Skolar and Franklin Gothic, provided by Adobe Typekit. If you want to learn more, the source code and documentation are <a href="https://github.com/wikichen/wikichen.is">hosted on GitHub</a>.
-  </p>
+  <ul class="list">
+    {% for post in site.posts %}
+    {% if post.new %}
+    <li class="list-post">
+      <h2 class="list-item-header">
+        <a class="link-plain" href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      {{ post.content }}
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
   </main>
 </div>
